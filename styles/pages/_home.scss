@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as v;
+
+.home {
+    .block {
+        .content {
+            h1 {
+                font-size: 0.8*22px;
+                color: v.$white !important;
+            }
+
+            h2 {
+                font-size: 0.8*22px;
+                color: v.$white;
+            }
+
+            h2.caps {
+                font-size: 0.8*13px;
+                color: v.$white;
+            }
+        }
+    }
+}
+
+@media (max-width: 759px) {
+    .home {
+        .block {
+            .content {
+                h1 {
+                    font-size: 16px;
+                    color: v.$white v.$important;
+                }
+
+                h2 {
+                    font-size: 16px;
+                    color: v.$white;
+                }
+
+                h2.caps {
+                    font-size: 11px;
+                    color: v.$white;
+                }
+            }
+        }
+    }
+}

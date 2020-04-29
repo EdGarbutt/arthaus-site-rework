@@ -1,0 +1,29 @@
+.home .block .content h1 {
+  font-size: 17.6px;
+  color: #ffffff !important;
+}
+.home .block .content h2 {
+  font-size: 17.6px;
+  color: #ffffff;
+}
+.home .block .content h2.caps {
+  font-size: 10.4px;
+  color: #ffffff;
+}
+
+@media (max-width: 759px) {
+  .home .block .content h1 {
+    font-size: 16px;
+    color: #ffffff !important;
+  }
+  .home .block .content h2 {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .home .block .content h2.caps {
+    font-size: 11px;
+    color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
