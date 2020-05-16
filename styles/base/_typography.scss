@@ -1,0 +1,81 @@
+
+@use '../abstracts/mixins' as m;
+@use '../abstracts/settings' as s;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+body {
+    font-family: "LatoWebLight";
+    font-size: 62.5%;
+}
+
+.strong {
+    font-weight: bold !important;
+    color: #525252;
+}
+
+header {
+    /* Navigation text */
+    nav {
+        .desktop-menu {
+            a {
+                font-family: "LatoWebLight";
+                color: m.get-key(s.$colours, dark-grey);
+                font-size: 0.8*15px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+
+                &.highlight {
+                    padding-bottom: 0.8*4px;
+                    border-bottom: 0.8*4px solid m.get-key(s.$colours, orange);
+
+                    &:hover {
+                        color: m.get-key(s.$colours, dark-grey);
+                    }
+                }
+
+                &:hover {
+                    padding-bottom: 0.8*4px;
+                    border-bottom: 0.8*4px solid m.get-key(s.$colours, orange);
+                }
+            }
+
+            .active {
+                padding-bottom: 0.8*4px;
+                border-bottom: 0.8*4px solid m.get-key(s.$colours, orange);
+            }
+        }
+        ul {
+            li {
+                a:not(.home-link) {
+                    font-family: "LatoWebLight";
+                    color: m.get-key(s.$colours, dark-grey);
+                    font-size: 0.8*15px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 700;
+
+                    &.highlight {
+                        padding-bottom: 0.8*4px;
+                        border-bottom: 0.8*4px solid m.get-key(s.$colours, orange);
+
+                        &:hover {
+                            color: m.get-key(s.$colours, dark-grey);
+                        }
+                    }
+
+                    &:hover {
+                        padding-bottom: 0.8*4px;
+                        border-bottom: 0.8*4px solid m.get-key(s.$colours, orange);
+                    }
+                }
+
+                .active {
+                    padding-bottom: 0.8*4px;
+                    border-bottom: 0.8*4px solid m.get-key(s.$colours, orange);
+                }
+            }
+        }
+    }
+}
