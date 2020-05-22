@@ -1,4 +1,4 @@
-@use '../abstracts/mixins' as m;
+@forward 'abstracts' as abstract-*;
 
 $breakpoints: (
   'small'  : ( min-width:  310px ),
@@ -141,11 +141,11 @@ $block-count-large: (
 );
 
 /* generate the maps for the layouts */
-$block-sizes-small: m.generate-sizes-map($block-types, $block-count-small, m.get-key($block-sizes,small-width), m.get-key($block-sizes,small-height), m.get-key($gutter-sizes,small));
+$block-sizes-small: abstract-m-generate-sizes-map($block-types, $block-count-small, abstract-m-get-key($block-sizes,small-width), abstract-m-get-key($block-sizes,small-height), abstract-m-get-key($gutter-sizes,small));
 
-$block-sizes-medium: m.generate-sizes-map($block-types, $block-count-medium, m.get-key($block-sizes,medium-width), m.get-key($block-sizes,medium-height), m.get-key($gutter-sizes,medium));
+$block-sizes-medium: abstract-m-generate-sizes-map($block-types, $block-count-medium, abstract-m-get-key($block-sizes,medium-width), abstract-m-get-key($block-sizes,medium-height), abstract-m-get-key($gutter-sizes,medium));
 
-$block-sizes-large: m.generate-sizes-map($block-types, $block-count-large, m.get-key($block-sizes,large-width), m.get-key($block-sizes,large-height), m.get-key($gutter-sizes,large));
+$block-sizes-large: abstract-m-generate-sizes-map($block-types, $block-count-large, abstract-m-get-key($block-sizes,large-width), abstract-m-get-key($block-sizes,large-height), abstract-m-get-key($gutter-sizes,large));
 
 $colours: (
     orange: #f28b00,

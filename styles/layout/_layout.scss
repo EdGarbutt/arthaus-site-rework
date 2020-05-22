@@ -1,0 +1,363 @@
+@use '../abstracts/mixins' as m;
+// @use '../abstracts/settings' as s;
+@use '../abstracts/variables' as v;
+
+// Layout Mixin
+@mixin layout ($layout, $blocks) {
+
+    $margin: m.get-key($layout, margin);
+
+    .home,
+    .work,
+    .about,
+    .expertise,
+    .contact {
+
+        .main {
+            width: m.get-key($layout, main);
+        }
+
+        .mainWrapper {
+            width: m.get-key($layout, mainWrapper);
+
+            .blocksContent,
+            .blocksWrapper {
+
+                .block {
+                    margin: $margin;
+
+                    .content {
+                        background-position: center;
+                        background-size: 100% 100%;
+                    }
+                }
+
+                .blockMainRow {
+                    margin-left: -$margin;
+                }
+
+                .type-a {
+                    @include m.output-layout-dimensions($blocks, a);
+                }
+
+                .type-b {
+                    @include m.output-layout-dimensions($blocks, b);
+                }
+
+                .type-c {
+                    @include m.output-layout-dimensions($blocks, c);
+                }
+
+                .type-d {
+                    @include m.output-layout-dimensions($blocks, d);
+                }
+
+                .type-e {
+                    @include m.output-layout-dimensions($blocks, e);
+                }
+
+                .type-f {
+                    @include m.output-layout-dimensions($blocks, f);
+                }
+
+                .type-fa {
+                    @include m.output-layout-dimensions($blocks, fa);
+                }
+
+                .type-g {
+                    @include m.output-layout-dimensions($blocks, g);
+                }
+
+                .type-h {
+                    @include m.output-layout-dimensions($blocks, h);
+                }
+
+                .type-i {
+                    @include m.output-layout-dimensions($blocks, i);
+                }
+
+                .type-j {
+                    @include m.output-layout-dimensions($blocks, j);
+                }
+
+                .type-ja {
+                    @include m.output-layout-dimensions($blocks, ja);
+                }
+
+                .type-k {
+                    @include m.output-layout-dimensions($blocks, k);
+                }
+
+                .type-l {
+                    @include m.output-layout-dimensions($blocks, l);
+                }
+
+                .bottom {
+                    margin-right: -$margin;
+                    margin-bottom: 0;
+                    margin-left: -$margin;
+                }
+
+                .top {
+                    margin-right: -$margin;
+                    margin-top: -$margin;
+                    margin-left: -$margin;
+                }
+            }
+        }
+    }
+}
+
+//bkg colors:
+.bkg--whiteGrey {
+    background-color: v.$whiteGrey;
+}
+
+.bkg--darkGrey {
+    background-color: v.$darkGrey;
+}
+
+.bkg--white {
+    background-color: white;
+}
+
+.bkg--mainOrange {
+    background-color: v.$mainOrange;
+}
+
+.bkg--teal {
+    background-color: v.$teal;
+}
+//padding
+
+.padding-b--18 {
+    padding-bottom: 18px;
+}
+
+.padding-b--20 {
+    padding-bottom: 20px;
+}
+
+.padding-b--30 {
+    padding-bottom: 30px;
+}
+
+.padding-b--40 {
+    padding-bottom: 40px;
+}
+
+.padding-b--60 {
+    padding-bottom: 30px;
+}
+
+.padding-t--30 {
+    padding-top: 30px;
+}
+
+.padding-b--10 {
+    padding-bottom: 10px;
+}
+
+.padding-b--25 {
+    padding-bottom: 25px;
+}
+
+.padding-b--60{
+    padding-bottom:60px;
+}
+
+
+.margin-b--60 {
+    margin-bottom: 60px;
+}
+
+.padding-t--10 {
+    padding-top: 10px;
+}
+.padding-t--18 {
+    padding-top: 18px;
+}
+.padding-t--20 {
+    padding-top: 20px;
+}
+
+
+.padding-t--25 {
+    padding-top: 25px;
+}
+.padding-t--30 {
+    padding-top: 30px;
+}
+.padding-t--40 {
+    padding-top: 40px;
+}
+.padding-t--60 {
+    padding-top: 60px;
+}
+.padding-l--none {
+    padding-left: 0;
+}
+
+.padding-r--none {
+    padding-right: 0;
+}
+
+.padding-t--none {
+    padding-top: 0;
+}
+
+.padding-b--none {
+    padding-bottom: 0;
+}
+
+.padding--none {
+    padding: 0;
+}
+
+.padding-l--5 {
+    padding-left: 5px;
+}
+
+.padding-r--5 {
+    padding-right: 5px;
+}
+
+.padding-l--15 {
+    padding-left: 15px;
+}
+
+.padding-r--15 {
+    padding-right: 15px;
+}
+
+.padding-l--20 {
+    padding-left: 20px;
+}
+
+.padding-r--20 {
+    padding-right: 20px;
+}
+
+//margin
+.margin--none {
+    margin: 0;
+}
+//display
+.display-flex {
+    display: flex;
+
+    &.align-center {
+        align-items: center;
+    }
+
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    &.direction-col {
+        flex-direction: column;
+    }
+
+    &.justify-spaceBetween {
+        justify-content: space-between;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+}
+
+.border {
+    border: 1px solid;
+}
+
+.border--darkGrey {
+    border-color: v.$darkGrey;
+}
+
+.border--mainOrange {
+    border-color: #fce7ca;
+}
+
+.border--teal {
+    border-color: #deeeeb;
+}
+
+.border--burgundy {
+    border-color: #e8dddf;
+}
+
+.border--green {
+    border-color: #e5ebcf;
+}
+
+.border--darkBlue {
+    border-color: #d7dee5;
+}
+
+.border--navy {
+    border-color: #d4d3db;
+}
+
+.border-bottom {
+    border-bottom: 2px solid;
+}
+//image
+figure {
+    margin: 0 !important;
+}
+
+.img-fullWidth {
+    width: 100%;
+}
+
+//height
+.height-auto {
+    height: auto !important;
+}
+
+hr {
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid silver;
+    max-width: 800px;
+}
+@media only screen and (max-width:758px) {
+    .padding-b--10{
+        padding-bottom:5px;
+    }
+    
+    .padding-b--18 {
+        padding-bottom: 9px;
+    }
+
+    .padding-b--20 {
+        padding-bottom: 10px;
+    }
+
+    .padding-b--40 {
+        padding-bottom: 20px;
+    }
+
+    .padding-b--30 {
+        padding-bottom: 15px;
+    }
+
+    .padding-b--60 {
+        padding-bottom: 30px;
+    }
+    .padding-t--18 {
+        padding-top: 9px;
+    }
+    .padding-t--30 {
+        padding-top: 15px;
+    }
+
+    .padding-t--60{
+        padding-top:30px;
+    }
+
+    .margin-b--60 {
+        margin-bottom: 30px;
+    }
+}
