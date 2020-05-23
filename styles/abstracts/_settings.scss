@@ -1,5 +1,3 @@
-@forward 'abstracts' as abstract-*;
-
 $breakpoints: (
   'small'  : ( min-width:  310px ),
   'small-max'  : ( max-width: 759px ),
@@ -139,13 +137,6 @@ $block-count-large: (
     l-width: 10,
     l-height: 0
 );
-
-/* generate the maps for the layouts */
-$block-sizes-small: abstract-m-generate-sizes-map($block-types, $block-count-small, abstract-m-get-key($block-sizes,small-width), abstract-m-get-key($block-sizes,small-height), abstract-m-get-key($gutter-sizes,small));
-
-$block-sizes-medium: abstract-m-generate-sizes-map($block-types, $block-count-medium, abstract-m-get-key($block-sizes,medium-width), abstract-m-get-key($block-sizes,medium-height), abstract-m-get-key($gutter-sizes,medium));
-
-$block-sizes-large: abstract-m-generate-sizes-map($block-types, $block-count-large, abstract-m-get-key($block-sizes,large-width), abstract-m-get-key($block-sizes,large-height), abstract-m-get-key($gutter-sizes,large));
 
 $colours: (
     orange: #f28b00,

@@ -1,4 +1,4 @@
-@use '../abstracts/settings' as s;
+// @use 'index' as abstract;
 
 /* ======== Functions ======== */
 
@@ -83,20 +83,22 @@
 
 /* generate the relevant code for the media query breakpoint */
 /* https://www.sitepoint.com/managing-responsive-breakpoints-sass/ */
-@mixin respond-to($name) {
+@mixin respond-to($name, $breakpoints) {
     // If the key exists in the map
-    @if map-has-key(s.$breakpoints, $name) {
+    @if map-has-key($breakpoints, $name) {
         // Prints a media query based on the value
-        @media #{inspect(get-key(s.$breakpoints, $name))} {
+        @media #{inspect(get-key($breakpoints, $name))} {
             @content;
         }
     }
 
     // If the key doesn't exist in the map
     @else {
-        @warn "Unfortunately, no value could be retrieved from `#{s.$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map.";
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`. " + "Please make sure it is defined in `$breakpoints` map.";
     }
 }
+
+
 
 /* ========= Layout ========= */
 

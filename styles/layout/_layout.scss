@@ -1,11 +1,13 @@
-@use '../abstracts/mixins' as m;
+//@forward '../abstracts/mixins' as m-*;
 // @use '../abstracts/settings' as s;
-@use '../abstracts/variables' as v;
+//@use '../abstracts/variables' as v;
+@use '../abstracts' as abstract;
+@use '../mixins' as mixin;
 
 // Layout Mixin
 @mixin layout ($layout, $blocks) {
 
-    $margin: m.get-key($layout, margin);
+    $margin: mixin.m-get-key($layout, margin);
 
     .home,
     .work,
@@ -14,11 +16,11 @@
     .contact {
 
         .main {
-            width: m.get-key($layout, main);
+            width: mixin.m-get-key($layout, main);
         }
 
         .mainWrapper {
-            width: m.get-key($layout, mainWrapper);
+            width: mixin.m-get-key($layout, mainWrapper);
 
             .blocksContent,
             .blocksWrapper {
@@ -37,59 +39,59 @@
                 }
 
                 .type-a {
-                    @include m.output-layout-dimensions($blocks, a);
+                    @include mixin.m-output-layout-dimensions($blocks, a);
                 }
 
                 .type-b {
-                    @include m.output-layout-dimensions($blocks, b);
+                    @include mixin.m-output-layout-dimensions($blocks, b);
                 }
 
                 .type-c {
-                    @include m.output-layout-dimensions($blocks, c);
+                    @include mixin.m-output-layout-dimensions($blocks, c);
                 }
 
                 .type-d {
-                    @include m.output-layout-dimensions($blocks, d);
+                    @include mixin.m-output-layout-dimensions($blocks, d);
                 }
 
                 .type-e {
-                    @include m.output-layout-dimensions($blocks, e);
+                    @include mixin.m-output-layout-dimensions($blocks, e);
                 }
 
                 .type-f {
-                    @include m.output-layout-dimensions($blocks, f);
+                    @include mixin.m-output-layout-dimensions($blocks, f);
                 }
 
                 .type-fa {
-                    @include m.output-layout-dimensions($blocks, fa);
+                    @include mixin.m-output-layout-dimensions($blocks, fa);
                 }
 
                 .type-g {
-                    @include m.output-layout-dimensions($blocks, g);
+                    @include mixin.m-output-layout-dimensions($blocks, g);
                 }
 
                 .type-h {
-                    @include m.output-layout-dimensions($blocks, h);
+                    @include mixin.m-output-layout-dimensions($blocks, h);
                 }
 
                 .type-i {
-                    @include m.output-layout-dimensions($blocks, i);
+                    @include mixin.m-output-layout-dimensions($blocks, i);
                 }
 
                 .type-j {
-                    @include m.output-layout-dimensions($blocks, j);
+                    @include mixin.m-output-layout-dimensions($blocks, j);
                 }
 
                 .type-ja {
-                    @include m.output-layout-dimensions($blocks, ja);
+                    @include mixin.m-output-layout-dimensions($blocks, ja);
                 }
 
                 .type-k {
-                    @include m.output-layout-dimensions($blocks, k);
+                    @include mixin.m-output-layout-dimensions($blocks, k);
                 }
 
                 .type-l {
-                    @include m.output-layout-dimensions($blocks, l);
+                    @include mixin.m-output-layout-dimensions($blocks, l);
                 }
 
                 .bottom {
@@ -108,13 +110,39 @@
     }
 }
 
+/* generate the maps for the layouts */
+$block-sizes-small: mixin.m-generate-sizes-map(abstract.$s-block-types, abstract.$s-block-count-small, mixin.m-get-key(abstract.$s-block-sizes,small-width), mixin.m-get-key(abstract.$s-block-sizes,small-height), mixin.m-get-key(abstract.$s-gutter-sizes,small));
+
+$block-sizes-medium: mixin.m-generate-sizes-map(abstract.$s-block-types, abstract.$s-block-count-medium, mixin.m-get-key(abstract.$s-block-sizes,medium-width), mixin.m-get-key(abstract.$s-block-sizes,medium-height), mixin.m-get-key(abstract.$s-gutter-sizes,medium));
+
+$block-sizes-large: mixin.m-generate-sizes-map(abstract.$s-block-types, abstract.$s-block-count-large, mixin.m-get-key(abstract.$s-block-sizes,large-width), mixin.m-get-key(abstract.$s-block-sizes,large-height), mixin.m-get-key(abstract.$s-gutter-sizes,large));
+
+
+
+@include mixin.m-respond-to(small-max, abstract.$s-breakpoints) {
+    @include layout(abstract.$s-layout-sizes-small, $block-sizes-small);
+}
+
+@include mixin.m-respond-to(medium, abstract.$s-breakpoints) {
+    @include layout(abstract.$s-layout-sizes-medium, $block-sizes-medium);
+ }
+
+@include mixin.m-respond-to(large, abstract.$s-breakpoints) {
+    @include layout(abstract.$s-layout-sizes-large, $block-sizes-large);
+}
+
+
+
+
+
+
 //bkg colors:
 .bkg--whiteGrey {
-    background-color: v.$whiteGrey;
+    background-color: abstract.$v-whiteGrey;
 }
 
 .bkg--darkGrey {
-    background-color: v.$darkGrey;
+    background-color: abstract.$v-darkGrey;
 }
 
 .bkg--white {
@@ -122,11 +150,11 @@
 }
 
 .bkg--mainOrange {
-    background-color: v.$mainOrange;
+    background-color: abstract.$v-mainOrange;
 }
 
 .bkg--teal {
-    background-color: v.$teal;
+    background-color: abstract.$v-teal;
 }
 //padding
 
@@ -272,7 +300,7 @@
 }
 
 .border--darkGrey {
-    border-color: v.$darkGrey;
+    border-color: abstract.$v-darkGrey;
 }
 
 .border--mainOrange {

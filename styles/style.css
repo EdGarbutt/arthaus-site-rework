@@ -1,29 +1,25 @@
-.home .block .content h1 {
-  font-size: 17.6px;
-  color: #ffffff !important;
-}
-.home .block .content h2 {
-  font-size: 17.6px;
-  color: #ffffff;
-}
-.home .block .content h2.caps {
-  font-size: 10.4px;
-  color: #ffffff;
-}
+/* Error: Module loop: this module is already being loaded.
+ *   ,--> styles\abstracts\_abstracts.scss
+ * 1 | @forward 'mixins' as m-*;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^ new load
+ *   '
+ *   ,--> styles\base\_typography.scss
+ * 1 | @use '../abstracts/mixins' as m;
+ *   | =============================== original load
+ *   '
+ *   styles\abstracts\_abstracts.scss 1:1  @forward
+ *   styles\abstracts\_settings.scss 1:1   @use
+ *   styles\abstracts\_mixins.scss 1:1     @use
+ *   styles\base\_typography.scss 1:1      @use
+ *   styles\style.scss 6:1                 root stylesheet */
 
-@media (max-width: 759px) {
-  .home .block .content h1 {
-    font-size: 16px;
-    color: #ffffff !important;
-  }
-  .home .block .content h2 {
-    font-size: 16px;
-    color: #ffffff;
-  }
-  .home .block .content h2.caps {
-    font-size: 11px;
-    color: #ffffff;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Module loop: this module is already being loaded.\a   \250c \2500 \2500 > styles\\abstracts\\_abstracts.scss\a 1 \2502  @forward 'mixins' as m-*;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > styles\\base\\_typography.scss\a 1 \2502  @use '../abstracts/mixins' as m;\d\a   \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   styles\\abstracts\\_abstracts.scss 1:1  @forward\a   styles\\abstracts\\_settings.scss 1:1   @use\a   styles\\abstracts\\_mixins.scss 1:1     @use\a   styles\\base\\_typography.scss 1:1      @use\a   styles\\style.scss 6:1                 root stylesheet";
 }
-
-/*# sourceMappingURL=style.css.map */

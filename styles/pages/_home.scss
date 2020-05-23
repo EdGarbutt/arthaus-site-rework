@@ -1,22 +1,21 @@
-@use '../abstracts/mixins' as m;
-@use '../abstracts/variables' as v;
+@use '../abstracts' as abstract;
 
 .home {
     .block {
         .content {
             h1 {
                 font-size: 0.8*22px;
-                color: v.$white !important;
+                color: abstract.$v-white !important;
             }
 
             h2 {
                 font-size: 0.8*22px;
-                color: v.$white;
+                color: abstract.$v-white;
             }
 
             h2.caps {
                 font-size: 0.8*13px;
-                color: v.$white;
+                color: abstract.$v-white;
             }
         }
     }
@@ -28,17 +27,17 @@
             .content {
                 h1 {
                     font-size: 16px;
-                    color: v.$white v.$important;
+                    color: abstract.$v-white abstract.$v-important;
                 }
 
                 h2 {
                     font-size: 16px;
-                    color: v.$white;
+                    color: abstract.$v-white;
                 }
 
                 h2.caps {
                     font-size: 11px;
-                    color: v.$white;
+                    color: abstract.$v-white;
                 }
             }
         }
