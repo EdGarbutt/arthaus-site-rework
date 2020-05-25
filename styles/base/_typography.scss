@@ -80,3 +80,32 @@ header {
         }
     }
 }
+
+/* Footer text */
+footer {
+    color: mixin.m-get-key(abstract.$s-colours, white);
+    font-size: 0.8*1.3em;
+
+    a {
+        color: mixin.m-get-key(abstract.$s-colours, white);
+        text-decoration: none;
+
+        &:hover {
+            color: #f28b00;
+        }
+    }
+
+    .arthaus-copyright {
+        font-size: 0.8*1.1em;
+    }
+
+    .arthaus-social {
+        ul {
+            li {
+                a {
+                    font-size: 0.8*2.2em;
+                }
+            }
+        }
+    }
+}
