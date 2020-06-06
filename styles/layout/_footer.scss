@@ -8,7 +8,7 @@ footer {
     color: mixin.m-get-key(abstract.$s-colours, white);
     height: 100%;
     border-top: 3px solid #f28b00;
-    margin: 10px;
+    margin: 10px 0px;
     
     @include mixin.m-respond-to(medium, abstract.$s-breakpoints) {
         display: flex;
