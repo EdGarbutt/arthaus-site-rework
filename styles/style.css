@@ -8194,6 +8194,133 @@ body {
   color: #525252;
 }
 
+.home main .content,
+.work main .content,
+.about main .content,
+.expertise main .content,
+.contact main .content {
+  color: #fff;
+}
+.home main .content h1,
+.work main .content h1,
+.about main .content h1,
+.expertise main .content h1,
+.contact main .content h1 {
+  font-size: 1.5em;
+  color: #525252;
+}
+.home main .content h2,
+.work main .content h2,
+.about main .content h2,
+.expertise main .content h2,
+.contact main .content h2 {
+  font-size: 1.5em;
+  /*color: #525252;*/
+}
+.home main .content h2.caps,
+.work main .content h2.caps,
+.about main .content h2.caps,
+.expertise main .content h2.caps,
+.contact main .content h2.caps {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+.home main .content p,
+.work main .content p,
+.about main .content p,
+.expertise main .content p,
+.contact main .content p {
+  font-size: 1.1em;
+  color: #525252;
+}
+.home main .content .plusIcon,
+.work main .content .plusIcon,
+.about main .content .plusIcon,
+.expertise main .content .plusIcon,
+.contact main .content .plusIcon {
+  font-size: 3em;
+}
+@media (min-width: 760px) {
+  .home main .content,
+.work main .content,
+.about main .content,
+.expertise main .content,
+.contact main .content {
+    padding: 16px;
+  }
+  .home main .content h1,
+.work main .content h1,
+.about main .content h1,
+.expertise main .content h1,
+.contact main .content h1 {
+    font-size: 1.76em;
+  }
+  .home main .content h2,
+.work main .content h2,
+.about main .content h2,
+.expertise main .content h2,
+.contact main .content h2 {
+    font-size: 17.6px;
+  }
+  .home main .content h2.caps,
+.work main .content h2.caps,
+.about main .content h2.caps,
+.expertise main .content h2.caps,
+.contact main .content h2.caps {
+    font-size: 1.04em;
+    text-transform: uppercase;
+  }
+  .home main .content p,
+.work main .content p,
+.about main .content p,
+.expertise main .content p,
+.contact main .content p {
+    font-size: 1.28em;
+  }
+  .home main .content .plusIcon,
+.work main .content .plusIcon,
+.about main .content .plusIcon,
+.expertise main .content .plusIcon,
+.contact main .content .plusIcon {
+    font-size: 4em;
+    margin-bottom: -2.4px;
+  }
+}
+
+.project main .content {
+  color: #000;
+}
+.project main .content p {
+  /*font-size: 2.4em;*/
+  font-size: 2.56em;
+}
+.project main .content.projectNavigation {
+  color: #66665d;
+  font-size: 2.8em;
+}
+
+.contact .mainWrapper .content,
+.about .mainWrapper .content,
+.expertise .mainWrapper .content {
+  color: #000;
+}
+.contact .mainWrapper .content .arthaus-address,
+.about .mainWrapper .content .arthaus-address,
+.expertise .mainWrapper .content .arthaus-address {
+  font-size: 1.28em;
+}
+.contact .mainWrapper .content .color-teal,
+.about .mainWrapper .content .color-teal,
+.expertise .mainWrapper .content .color-teal {
+  color: #46a8a8;
+}
+.contact .mainWrapper .content .arthaus-social ul li a,
+.about .mainWrapper .content .arthaus-social ul li a,
+.expertise .mainWrapper .content .arthaus-social ul li a {
+  color: #46a8a8;
+  font-size: 2.8em;
+}
+
 header {
   /* Navigation text */
 }
@@ -8261,6 +8388,42 @@ footer .arthaus-copyright {
 }
 footer .arthaus-social ul li a {
   font-size: 1.76em;
+}
+
+.masthead {
+  color: #fff;
+}
+.masthead h1 {
+  font-family: "LatoWebBlack";
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 760px) {
+  .masthead h1 {
+    font-size: 8em;
+  }
+}
+@media (min-width: 1240px) {
+  .masthead h1 {
+    font-size: 9.6em;
+  }
+}
+.masthead h2 {
+  font-family: "LatoWeb";
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 760px) {
+  .masthead h2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1240px) {
+  .masthead h2 {
+    font-size: 2.16em;
+  }
 }
 
 header {
@@ -8417,11 +8580,11 @@ header nav .menu-items ul li a {
   }
 }
 
-main .homepage-grid {
+.home .homepage-grid {
   display: grid;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid {
+  .home .homepage-grid {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 112px);
     column-gap: 16px;
@@ -8429,7 +8592,7 @@ main .homepage-grid {
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid {
+  .home .homepage-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(14, 140px);
     column-gap: 20px;
@@ -8437,18 +8600,18 @@ main .homepage-grid {
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid {
+  .home .homepage-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(20, 85px);
     column-gap: 10px;
     row-gap: 10px;
   }
 }
-main .homepage-grid .block {
+.home .homepage-grid .block {
   background-position: center;
   background-size: 100% 100%;
 }
-main .homepage-grid .block .content {
+.home .homepage-grid .block .content {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -8458,16 +8621,16 @@ main .homepage-grid .block .content {
   color: white;
 }
 @media (min-width: 760px) {
-  main .homepage-grid .block .content {
+  .home .homepage-grid .block .content {
     padding: 16px;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block .content {
+  .home .homepage-grid .block .content {
     padding: 10px;
   }
 }
-main .homepage-grid .block .content a {
+.home .homepage-grid .block .content a {
   background: #fff;
   bottom: 0;
   left: 0;
@@ -8478,36 +8641,36 @@ main .homepage-grid .block .content a {
   width: 100%;
   z-index: 2;
 }
-main .homepage-grid .block .content h1 {
+.home .homepage-grid .block .content h1 {
   margin: 0;
 }
 @media (min-width: 760px) {
-  main .homepage-grid .block .content h1 {
+  .home .homepage-grid .block .content h1 {
     font-size: 17.6px;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block .content h1 {
+  .home .homepage-grid .block .content h1 {
     font-size: 16px;
   }
 }
-main .homepage-grid .block .content h2 {
+.home .homepage-grid .block .content h2 {
   margin: 0;
 }
-main .homepage-grid .block .content .bottom {
+.home .homepage-grid .block .content .bottom {
   flex: 1;
   align-self: flex-end;
 }
-main .homepage-grid .block .content .top {
+.home .homepage-grid .block .content .top {
   flex: 1;
   align-self: flex-start;
 }
-main .homepage-grid .block .content .top-caps {
+.home .homepage-grid .block .content .top-caps {
   margin: 0 0 16px 0;
   font-size: 10.4px;
   text-transform: uppercase;
 }
-main .homepage-grid .block .content .plus-icon {
+.home .homepage-grid .block .content .plus-icon {
   position: absolute;
   bottom: 16px;
   right: 16px;
@@ -8515,349 +8678,349 @@ main .homepage-grid .block .content .plus-icon {
   font-size: 4em;
   margin-bottom: -2.4px;
 }
-main .homepage-grid .block.b-1 {
+.home .homepage-grid .block.b-1 {
   background: #f28b00;
   grid-column: 1/3;
 }
-main .homepage-grid .block.b-2 {
+.home .homepage-grid .block.b-2 {
   background-color: #8a5668;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/arthaus-website-social-post.appspot.com/o/socialPost%2FpostImg8.png?alt=media&token=6bb2bc30-1027-4e13-998f-6a9844860577");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-2 {
+  .home .homepage-grid .block.b-2 {
     grid-column: 3/4;
     grid-row: 3/5;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-2 {
+  .home .homepage-grid .block.b-2 {
     grid-column: 3/4;
     grid-row: 1/3;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-2 {
+  .home .homepage-grid .block.b-2 {
     grid-column: 1/2;
     grid-row: 4/6;
   }
 }
-main .homepage-grid .block.b-3 {
+.home .homepage-grid .block.b-3 {
   background-color: #6a8aaa;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/arthaus-website-social-post.appspot.com/o/socialPost%2FpostImg2.png?alt=media&token=3932913e-c103-408c-bff8-1f3efa2a7152");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-3 {
+  .home .homepage-grid .block.b-3 {
     grid-column: 3/5;
     grid-row: 1/3;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-3 {
+  .home .homepage-grid .block.b-3 {
     grid-column: 2/4;
     grid-row: 4/6;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-3 {
+  .home .homepage-grid .block.b-3 {
     grid-column: 1/3;
     grid-row: 6/8;
   }
 }
-main .homepage-grid .block.b-4 {
+.home .homepage-grid .block.b-4 {
   background-color: #6a8aaa;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-4 {
+  .home .homepage-grid .block.b-4 {
     grid-column: 5/6;
     grid-row: 1/3;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-4 {
+  .home .homepage-grid .block.b-4 {
     grid-column: 1/2;
     grid-row: 4/6;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-4 {
+  .home .homepage-grid .block.b-4 {
     grid-column: 2/3;
     grid-row: 11/13;
   }
 }
-main .homepage-grid .block.b-5 {
+.home .homepage-grid .block.b-5 {
   background-color: #afb744;
   background-image: url("../images/home/large/SSYWebsite_460x300.png");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-5 {
+  .home .homepage-grid .block.b-5 {
     grid-column: 1/3;
     grid-row: 2/4;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-5 {
+  .home .homepage-grid .block.b-5 {
     grid-column: 1/3;
     grid-row: 2/4;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-5 {
+  .home .homepage-grid .block.b-5 {
     grid-column: 1/3;
     grid-row: 2/4;
   }
 }
-main .homepage-grid .block.b-6 {
+.home .homepage-grid .block.b-6 {
   background-color: #afb744;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-6 {
+  .home .homepage-grid .block.b-6 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-6 {
+  .home .homepage-grid .block.b-6 {
     grid-column: 3/4;
     grid-row: 3/4;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-6 {
+  .home .homepage-grid .block.b-6 {
     grid-column: 2/3;
     grid-row: 4/5;
   }
 }
-main .homepage-grid .block.b-7 {
+.home .homepage-grid .block.b-7 {
   background-color: #6a8aaa;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-7 {
+  .home .homepage-grid .block.b-7 {
     grid-column: 2/3;
     grid-row: 4/5;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-7 {
+  .home .homepage-grid .block.b-7 {
     grid-column: 3/4;
     grid-row: 6/7;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-7 {
+  .home .homepage-grid .block.b-7 {
     grid-column: 2/3;
     grid-row: 5/6;
   }
 }
-main .homepage-grid .block.b-8 {
+.home .homepage-grid .block.b-8 {
   background-color: #8a5668;
   background-image: url("../images/home/large/hsbc_university.png");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-8 {
+  .home .homepage-grid .block.b-8 {
     grid-column: 4/6;
     grid-row: 3/5;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-8 {
+  .home .homepage-grid .block.b-8 {
     grid-column: 1/3;
     grid-row: 6/8;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-8 {
+  .home .homepage-grid .block.b-8 {
     grid-column: 1/3;
     grid-row: 9/11;
   }
 }
-main .homepage-grid .block.b-9 {
+.home .homepage-grid .block.b-9 {
   background-color: #f28b00;
   background-image: url("../images/home/large/Wavesapp.png");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-9 {
+  .home .homepage-grid .block.b-9 {
     grid-column: 1/3;
     grid-row: 5/7;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-9 {
+  .home .homepage-grid .block.b-9 {
     grid-column: 2/4;
     grid-row: 8/10;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-9 {
+  .home .homepage-grid .block.b-9 {
     grid-column: 1/3;
     grid-row: 13/15;
   }
 }
-main .homepage-grid .block.b-10 {
+.home .homepage-grid .block.b-10 {
   background-color: #afb744;
   background-image: url("../images/home/large/aboutus.png");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-10 {
+  .home .homepage-grid .block.b-10 {
     grid-column: 3/5;
     grid-row: 5/7;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-10 {
+  .home .homepage-grid .block.b-10 {
     grid-column: 2/4;
     grid-row: 11/13;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-10 {
+  .home .homepage-grid .block.b-10 {
     grid-column: 1/3;
     grid-row: 15/17;
   }
 }
-main .homepage-grid .block.b-11 {
+.home .homepage-grid .block.b-11 {
   background-color: #8a5668;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/arthaus-website-social-post.appspot.com/o/socialPost%2FpostImg9.png?alt=media&token=b5dafb7a-eace-4186-b624-dac8f5d8625a");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-11 {
+  .home .homepage-grid .block.b-11 {
     grid-column: 5/6;
     grid-row: 5/7;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-11 {
+  .home .homepage-grid .block.b-11 {
     grid-column: 1/2;
     grid-row: 11/13;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-11 {
+  .home .homepage-grid .block.b-11 {
     grid-column: 2/3;
     grid-row: 17/19;
   }
 }
-main .homepage-grid .block.b-12 {
+.home .homepage-grid .block.b-12 {
   background-color: #afb744;
   flex-direction: column;
   grid-column: 1/2;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-12 {
+  .home .homepage-grid .block.b-12 {
     grid-row: 7/9;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-12 {
+  .home .homepage-grid .block.b-12 {
     grid-row: 8/10;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-12 {
+  .home .homepage-grid .block.b-12 {
     grid-row: 17/19;
   }
 }
-main .homepage-grid .block.b-12 .top {
+.home .homepage-grid .block.b-12 .top {
   flex: auto;
 }
-main .homepage-grid .block.b-12 h4 {
+.home .homepage-grid .block.b-12 h4 {
   position: absolute;
   widows: 100%;
   bottom: 10px;
   font-size: 13px;
 }
 @media (min-width: 760px) {
-  main .homepage-grid .block.b-12 h4 {
+  .home .homepage-grid .block.b-12 h4 {
     left: 16px;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-12 h4 {
+  .home .homepage-grid .block.b-12 h4 {
     left: 10px;
     padding-right: 10px;
   }
 }
-main .homepage-grid .block.b-13 {
+.home .homepage-grid .block.b-13 {
   background-color: #6a8aaa;
   background-image: url("../images/home/large/AgNovos_Website.png");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-13 {
+  .home .homepage-grid .block.b-13 {
     grid-column: 2/4;
     grid-row: 7/9;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-13 {
+  .home .homepage-grid .block.b-13 {
     grid-column: 1/3;
     grid-row: 13/15;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-13 {
+  .home .homepage-grid .block.b-13 {
     grid-column: 1/3;
     grid-row: 19/21;
   }
 }
-main .homepage-grid .block.b-14 {
+.home .homepage-grid .block.b-14 {
   background-color: #6a8aaa;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-14 {
+  .home .homepage-grid .block.b-14 {
     grid-column: 4/5;
     grid-row: 7/8;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-14 {
+  .home .homepage-grid .block.b-14 {
     grid-column: 3/4;
     grid-row: 10/11;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-14 {
+  .home .homepage-grid .block.b-14 {
     grid-column: 1/2;
     grid-row: 12/13;
   }
 }
-main .homepage-grid .block.b-15 {
+.home .homepage-grid .block.b-15 {
   background-color: #8a5668;
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-15 {
+  .home .homepage-grid .block.b-15 {
     grid-column: 5/6;
     grid-row: 7/8;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-15 {
+  .home .homepage-grid .block.b-15 {
     grid-column: 3/4;
     grid-row: 7/8;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-15 {
+  .home .homepage-grid .block.b-15 {
     grid-column: 1/2;
     grid-row: 11/12;
   }
 }
-main .homepage-grid .block.b-16 {
+.home .homepage-grid .block.b-16 {
   background-color: #afb744;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/arthaus-website-social-post.appspot.com/o/socialPost%2FpostImg10.png?alt=media&token=d1cd3dc6-332b-4823-b7fe-c99a4b4b0e0e");
 }
 @media (min-width: 1240px) {
-  main .homepage-grid .block.b-16 {
+  .home .homepage-grid .block.b-16 {
     grid-column: 4/6;
     grid-row: 8/9;
   }
 }
 @media (max-width: 1239px) {
-  main .homepage-grid .block.b-16 {
+  .home .homepage-grid .block.b-16 {
     grid-column: 1/3;
     grid-row: 10/11;
   }
 }
 @media (max-width: 759px) {
-  main .homepage-grid .block.b-16 {
+  .home .homepage-grid .block.b-16 {
     grid-column: 1/3;
     grid-row: 8/9;
   }
@@ -8872,253 +9035,255 @@ main .homepage-grid .block.b-16 {
 .contact .container {
     width: 320px;
   }
-  .home .mainWrapper,
-.work .mainWrapper,
-.about .mainWrapper,
-.expertise .mainWrapper,
-.contact .mainWrapper {
+  .home main,
+.work main,
+.about main,
+.expertise main,
+.contact main {
+    display: flex;
+    flex-flow: column;
     width: 300px;
   }
-  .home .mainWrapper .blocksContent .block,
-.home .mainWrapper .blocksWrapper .block,
-.work .mainWrapper .blocksContent .block,
-.work .mainWrapper .blocksWrapper .block,
-.about .mainWrapper .blocksContent .block,
-.about .mainWrapper .blocksWrapper .block,
-.expertise .mainWrapper .blocksContent .block,
-.expertise .mainWrapper .blocksWrapper .block,
-.contact .mainWrapper .blocksContent .block,
-.contact .mainWrapper .blocksWrapper .block {
+  .home main .blocksContent .block,
+.home main .blocksWrapper .block,
+.work main .blocksContent .block,
+.work main .blocksWrapper .block,
+.about main .blocksContent .block,
+.about main .blocksWrapper .block,
+.expertise main .blocksContent .block,
+.expertise main .blocksWrapper .block,
+.contact main .blocksContent .block,
+.contact main .blocksWrapper .block {
     margin: 5px;
   }
-  .home .mainWrapper .blocksContent .block .content,
-.home .mainWrapper .blocksWrapper .block .content,
-.work .mainWrapper .blocksContent .block .content,
-.work .mainWrapper .blocksWrapper .block .content,
-.about .mainWrapper .blocksContent .block .content,
-.about .mainWrapper .blocksWrapper .block .content,
-.expertise .mainWrapper .blocksContent .block .content,
-.expertise .mainWrapper .blocksWrapper .block .content,
-.contact .mainWrapper .blocksContent .block .content,
-.contact .mainWrapper .blocksWrapper .block .content {
+  .home main .blocksContent .block .content,
+.home main .blocksWrapper .block .content,
+.work main .blocksContent .block .content,
+.work main .blocksWrapper .block .content,
+.about main .blocksContent .block .content,
+.about main .blocksWrapper .block .content,
+.expertise main .blocksContent .block .content,
+.expertise main .blocksWrapper .block .content,
+.contact main .blocksContent .block .content,
+.contact main .blocksWrapper .block .content {
     background-position: center;
     background-size: 100% 100%;
   }
-  .home .mainWrapper .blocksContent .blockMainRow,
-.home .mainWrapper .blocksWrapper .blockMainRow,
-.work .mainWrapper .blocksContent .blockMainRow,
-.work .mainWrapper .blocksWrapper .blockMainRow,
-.about .mainWrapper .blocksContent .blockMainRow,
-.about .mainWrapper .blocksWrapper .blockMainRow,
-.expertise .mainWrapper .blocksContent .blockMainRow,
-.expertise .mainWrapper .blocksWrapper .blockMainRow,
-.contact .mainWrapper .blocksContent .blockMainRow,
-.contact .mainWrapper .blocksWrapper .blockMainRow {
+  .home main .blocksContent .blockMainRow,
+.home main .blocksWrapper .blockMainRow,
+.work main .blocksContent .blockMainRow,
+.work main .blocksWrapper .blockMainRow,
+.about main .blocksContent .blockMainRow,
+.about main .blocksWrapper .blockMainRow,
+.expertise main .blocksContent .blockMainRow,
+.expertise main .blocksWrapper .blockMainRow,
+.contact main .blocksContent .blockMainRow,
+.contact main .blocksWrapper .blockMainRow {
     margin-left: -5px;
   }
-  .home .mainWrapper .blocksContent .type-a,
-.home .mainWrapper .blocksWrapper .type-a,
-.work .mainWrapper .blocksContent .type-a,
-.work .mainWrapper .blocksWrapper .type-a,
-.about .mainWrapper .blocksContent .type-a,
-.about .mainWrapper .blocksWrapper .type-a,
-.expertise .mainWrapper .blocksContent .type-a,
-.expertise .mainWrapper .blocksWrapper .type-a,
-.contact .mainWrapper .blocksContent .type-a,
-.contact .mainWrapper .blocksWrapper .type-a {
+  .home main .blocksContent .type-a,
+.home main .blocksWrapper .type-a,
+.work main .blocksContent .type-a,
+.work main .blocksWrapper .type-a,
+.about main .blocksContent .type-a,
+.about main .blocksWrapper .type-a,
+.expertise main .blocksContent .type-a,
+.expertise main .blocksWrapper .type-a,
+.contact main .blocksContent .type-a,
+.contact main .blocksWrapper .type-a {
     width: 300px;
     height: 85px;
   }
-  .home .mainWrapper .blocksContent .type-b,
-.home .mainWrapper .blocksWrapper .type-b,
-.work .mainWrapper .blocksContent .type-b,
-.work .mainWrapper .blocksWrapper .type-b,
-.about .mainWrapper .blocksContent .type-b,
-.about .mainWrapper .blocksWrapper .type-b,
-.expertise .mainWrapper .blocksContent .type-b,
-.expertise .mainWrapper .blocksWrapper .type-b,
-.contact .mainWrapper .blocksContent .type-b,
-.contact .mainWrapper .blocksWrapper .type-b {
+  .home main .blocksContent .type-b,
+.home main .blocksWrapper .type-b,
+.work main .blocksContent .type-b,
+.work main .blocksWrapper .type-b,
+.about main .blocksContent .type-b,
+.about main .blocksWrapper .type-b,
+.expertise main .blocksContent .type-b,
+.expertise main .blocksWrapper .type-b,
+.contact main .blocksContent .type-b,
+.contact main .blocksWrapper .type-b {
     width: 145px;
     height: 180px;
   }
-  .home .mainWrapper .blocksContent .type-c,
-.home .mainWrapper .blocksWrapper .type-c,
-.work .mainWrapper .blocksContent .type-c,
-.work .mainWrapper .blocksWrapper .type-c,
-.about .mainWrapper .blocksContent .type-c,
-.about .mainWrapper .blocksWrapper .type-c,
-.expertise .mainWrapper .blocksContent .type-c,
-.expertise .mainWrapper .blocksWrapper .type-c,
-.contact .mainWrapper .blocksContent .type-c,
-.contact .mainWrapper .blocksWrapper .type-c {
+  .home main .blocksContent .type-c,
+.home main .blocksWrapper .type-c,
+.work main .blocksContent .type-c,
+.work main .blocksWrapper .type-c,
+.about main .blocksContent .type-c,
+.about main .blocksWrapper .type-c,
+.expertise main .blocksContent .type-c,
+.expertise main .blocksWrapper .type-c,
+.contact main .blocksContent .type-c,
+.contact main .blocksWrapper .type-c {
     width: 300px;
     height: 180px;
   }
-  .home .mainWrapper .blocksContent .type-d,
-.home .mainWrapper .blocksWrapper .type-d,
-.work .mainWrapper .blocksContent .type-d,
-.work .mainWrapper .blocksWrapper .type-d,
-.about .mainWrapper .blocksContent .type-d,
-.about .mainWrapper .blocksWrapper .type-d,
-.expertise .mainWrapper .blocksContent .type-d,
-.expertise .mainWrapper .blocksWrapper .type-d,
-.contact .mainWrapper .blocksContent .type-d,
-.contact .mainWrapper .blocksWrapper .type-d {
+  .home main .blocksContent .type-d,
+.home main .blocksWrapper .type-d,
+.work main .blocksContent .type-d,
+.work main .blocksWrapper .type-d,
+.about main .blocksContent .type-d,
+.about main .blocksWrapper .type-d,
+.expertise main .blocksContent .type-d,
+.expertise main .blocksWrapper .type-d,
+.contact main .blocksContent .type-d,
+.contact main .blocksWrapper .type-d {
     width: 145px;
     height: 85px;
   }
-  .home .mainWrapper .blocksContent .type-e,
-.home .mainWrapper .blocksWrapper .type-e,
-.work .mainWrapper .blocksContent .type-e,
-.work .mainWrapper .blocksWrapper .type-e,
-.about .mainWrapper .blocksContent .type-e,
-.about .mainWrapper .blocksWrapper .type-e,
-.expertise .mainWrapper .blocksContent .type-e,
-.expertise .mainWrapper .blocksWrapper .type-e,
-.contact .mainWrapper .blocksContent .type-e,
-.contact .mainWrapper .blocksWrapper .type-e {
+  .home main .blocksContent .type-e,
+.home main .blocksWrapper .type-e,
+.work main .blocksContent .type-e,
+.work main .blocksWrapper .type-e,
+.about main .blocksContent .type-e,
+.about main .blocksWrapper .type-e,
+.expertise main .blocksContent .type-e,
+.expertise main .blocksWrapper .type-e,
+.contact main .blocksContent .type-e,
+.contact main .blocksWrapper .type-e {
     width: 300px;
     height: 180px;
   }
-  .home .mainWrapper .blocksContent .type-f,
-.home .mainWrapper .blocksWrapper .type-f,
-.work .mainWrapper .blocksContent .type-f,
-.work .mainWrapper .blocksWrapper .type-f,
-.about .mainWrapper .blocksContent .type-f,
-.about .mainWrapper .blocksWrapper .type-f,
-.expertise .mainWrapper .blocksContent .type-f,
-.expertise .mainWrapper .blocksWrapper .type-f,
-.contact .mainWrapper .blocksContent .type-f,
-.contact .mainWrapper .blocksWrapper .type-f {
+  .home main .blocksContent .type-f,
+.home main .blocksWrapper .type-f,
+.work main .blocksContent .type-f,
+.work main .blocksWrapper .type-f,
+.about main .blocksContent .type-f,
+.about main .blocksWrapper .type-f,
+.expertise main .blocksContent .type-f,
+.expertise main .blocksWrapper .type-f,
+.contact main .blocksContent .type-f,
+.contact main .blocksWrapper .type-f {
     width: 300px;
     height: 85px;
   }
-  .home .mainWrapper .blocksContent .type-fa,
-.home .mainWrapper .blocksWrapper .type-fa,
-.work .mainWrapper .blocksContent .type-fa,
-.work .mainWrapper .blocksWrapper .type-fa,
-.about .mainWrapper .blocksContent .type-fa,
-.about .mainWrapper .blocksWrapper .type-fa,
-.expertise .mainWrapper .blocksContent .type-fa,
-.expertise .mainWrapper .blocksWrapper .type-fa,
-.contact .mainWrapper .blocksContent .type-fa,
-.contact .mainWrapper .blocksWrapper .type-fa {
+  .home main .blocksContent .type-fa,
+.home main .blocksWrapper .type-fa,
+.work main .blocksContent .type-fa,
+.work main .blocksWrapper .type-fa,
+.about main .blocksContent .type-fa,
+.about main .blocksWrapper .type-fa,
+.expertise main .blocksContent .type-fa,
+.expertise main .blocksWrapper .type-fa,
+.contact main .blocksContent .type-fa,
+.contact main .blocksWrapper .type-fa {
     width: 300px;
     height: 38px;
   }
-  .home .mainWrapper .blocksContent .type-g,
-.home .mainWrapper .blocksWrapper .type-g,
-.work .mainWrapper .blocksContent .type-g,
-.work .mainWrapper .blocksWrapper .type-g,
-.about .mainWrapper .blocksContent .type-g,
-.about .mainWrapper .blocksWrapper .type-g,
-.expertise .mainWrapper .blocksContent .type-g,
-.expertise .mainWrapper .blocksWrapper .type-g,
-.contact .mainWrapper .blocksContent .type-g,
-.contact .mainWrapper .blocksWrapper .type-g {
+  .home main .blocksContent .type-g,
+.home main .blocksWrapper .type-g,
+.work main .blocksContent .type-g,
+.work main .blocksWrapper .type-g,
+.about main .blocksContent .type-g,
+.about main .blocksWrapper .type-g,
+.expertise main .blocksContent .type-g,
+.expertise main .blocksWrapper .type-g,
+.contact main .blocksContent .type-g,
+.contact main .blocksWrapper .type-g {
     width: 300px;
     height: 180px;
   }
-  .home .mainWrapper .blocksContent .type-h,
-.home .mainWrapper .blocksWrapper .type-h,
-.work .mainWrapper .blocksContent .type-h,
-.work .mainWrapper .blocksWrapper .type-h,
-.about .mainWrapper .blocksContent .type-h,
-.about .mainWrapper .blocksWrapper .type-h,
-.expertise .mainWrapper .blocksContent .type-h,
-.expertise .mainWrapper .blocksWrapper .type-h,
-.contact .mainWrapper .blocksContent .type-h,
-.contact .mainWrapper .blocksWrapper .type-h {
+  .home main .blocksContent .type-h,
+.home main .blocksWrapper .type-h,
+.work main .blocksContent .type-h,
+.work main .blocksWrapper .type-h,
+.about main .blocksContent .type-h,
+.about main .blocksWrapper .type-h,
+.expertise main .blocksContent .type-h,
+.expertise main .blocksWrapper .type-h,
+.contact main .blocksContent .type-h,
+.contact main .blocksWrapper .type-h {
     width: 300px;
     height: 85px;
   }
-  .home .mainWrapper .blocksContent .type-i,
-.home .mainWrapper .blocksWrapper .type-i,
-.work .mainWrapper .blocksContent .type-i,
-.work .mainWrapper .blocksWrapper .type-i,
-.about .mainWrapper .blocksContent .type-i,
-.about .mainWrapper .blocksWrapper .type-i,
-.expertise .mainWrapper .blocksContent .type-i,
-.expertise .mainWrapper .blocksWrapper .type-i,
-.contact .mainWrapper .blocksContent .type-i,
-.contact .mainWrapper .blocksWrapper .type-i {
+  .home main .blocksContent .type-i,
+.home main .blocksWrapper .type-i,
+.work main .blocksContent .type-i,
+.work main .blocksWrapper .type-i,
+.about main .blocksContent .type-i,
+.about main .blocksWrapper .type-i,
+.expertise main .blocksContent .type-i,
+.expertise main .blocksWrapper .type-i,
+.contact main .blocksContent .type-i,
+.contact main .blocksWrapper .type-i {
     width: 300px;
   }
-  .home .mainWrapper .blocksContent .type-j,
-.home .mainWrapper .blocksWrapper .type-j,
-.work .mainWrapper .blocksContent .type-j,
-.work .mainWrapper .blocksWrapper .type-j,
-.about .mainWrapper .blocksContent .type-j,
-.about .mainWrapper .blocksWrapper .type-j,
-.expertise .mainWrapper .blocksContent .type-j,
-.expertise .mainWrapper .blocksWrapper .type-j,
-.contact .mainWrapper .blocksContent .type-j,
-.contact .mainWrapper .blocksWrapper .type-j {
+  .home main .blocksContent .type-j,
+.home main .blocksWrapper .type-j,
+.work main .blocksContent .type-j,
+.work main .blocksWrapper .type-j,
+.about main .blocksContent .type-j,
+.about main .blocksWrapper .type-j,
+.expertise main .blocksContent .type-j,
+.expertise main .blocksWrapper .type-j,
+.contact main .blocksContent .type-j,
+.contact main .blocksWrapper .type-j {
     width: 300px;
   }
-  .home .mainWrapper .blocksContent .type-ja,
-.home .mainWrapper .blocksWrapper .type-ja,
-.work .mainWrapper .blocksContent .type-ja,
-.work .mainWrapper .blocksWrapper .type-ja,
-.about .mainWrapper .blocksContent .type-ja,
-.about .mainWrapper .blocksWrapper .type-ja,
-.expertise .mainWrapper .blocksContent .type-ja,
-.expertise .mainWrapper .blocksWrapper .type-ja,
-.contact .mainWrapper .blocksContent .type-ja,
-.contact .mainWrapper .blocksWrapper .type-ja {
+  .home main .blocksContent .type-ja,
+.home main .blocksWrapper .type-ja,
+.work main .blocksContent .type-ja,
+.work main .blocksWrapper .type-ja,
+.about main .blocksContent .type-ja,
+.about main .blocksWrapper .type-ja,
+.expertise main .blocksContent .type-ja,
+.expertise main .blocksWrapper .type-ja,
+.contact main .blocksContent .type-ja,
+.contact main .blocksWrapper .type-ja {
     width: 300px;
     height: 38px;
   }
-  .home .mainWrapper .blocksContent .type-k,
-.home .mainWrapper .blocksWrapper .type-k,
-.work .mainWrapper .blocksContent .type-k,
-.work .mainWrapper .blocksWrapper .type-k,
-.about .mainWrapper .blocksContent .type-k,
-.about .mainWrapper .blocksWrapper .type-k,
-.expertise .mainWrapper .blocksContent .type-k,
-.expertise .mainWrapper .blocksWrapper .type-k,
-.contact .mainWrapper .blocksContent .type-k,
-.contact .mainWrapper .blocksWrapper .type-k {
+  .home main .blocksContent .type-k,
+.home main .blocksWrapper .type-k,
+.work main .blocksContent .type-k,
+.work main .blocksWrapper .type-k,
+.about main .blocksContent .type-k,
+.about main .blocksWrapper .type-k,
+.expertise main .blocksContent .type-k,
+.expertise main .blocksWrapper .type-k,
+.contact main .blocksContent .type-k,
+.contact main .blocksWrapper .type-k {
     width: 300px;
     height: 180px;
   }
-  .home .mainWrapper .blocksContent .type-l,
-.home .mainWrapper .blocksWrapper .type-l,
-.work .mainWrapper .blocksContent .type-l,
-.work .mainWrapper .blocksWrapper .type-l,
-.about .mainWrapper .blocksContent .type-l,
-.about .mainWrapper .blocksWrapper .type-l,
-.expertise .mainWrapper .blocksContent .type-l,
-.expertise .mainWrapper .blocksWrapper .type-l,
-.contact .mainWrapper .blocksContent .type-l,
-.contact .mainWrapper .blocksWrapper .type-l {
+  .home main .blocksContent .type-l,
+.home main .blocksWrapper .type-l,
+.work main .blocksContent .type-l,
+.work main .blocksWrapper .type-l,
+.about main .blocksContent .type-l,
+.about main .blocksWrapper .type-l,
+.expertise main .blocksContent .type-l,
+.expertise main .blocksWrapper .type-l,
+.contact main .blocksContent .type-l,
+.contact main .blocksWrapper .type-l {
     width: 300px;
   }
-  .home .mainWrapper .blocksContent .bottom,
-.home .mainWrapper .blocksWrapper .bottom,
-.work .mainWrapper .blocksContent .bottom,
-.work .mainWrapper .blocksWrapper .bottom,
-.about .mainWrapper .blocksContent .bottom,
-.about .mainWrapper .blocksWrapper .bottom,
-.expertise .mainWrapper .blocksContent .bottom,
-.expertise .mainWrapper .blocksWrapper .bottom,
-.contact .mainWrapper .blocksContent .bottom,
-.contact .mainWrapper .blocksWrapper .bottom {
+  .home main .blocksContent .bottom,
+.home main .blocksWrapper .bottom,
+.work main .blocksContent .bottom,
+.work main .blocksWrapper .bottom,
+.about main .blocksContent .bottom,
+.about main .blocksWrapper .bottom,
+.expertise main .blocksContent .bottom,
+.expertise main .blocksWrapper .bottom,
+.contact main .blocksContent .bottom,
+.contact main .blocksWrapper .bottom {
     margin-right: -5px;
     margin-bottom: 0;
     margin-left: -5px;
   }
-  .home .mainWrapper .blocksContent .top,
-.home .mainWrapper .blocksWrapper .top,
-.work .mainWrapper .blocksContent .top,
-.work .mainWrapper .blocksWrapper .top,
-.about .mainWrapper .blocksContent .top,
-.about .mainWrapper .blocksWrapper .top,
-.expertise .mainWrapper .blocksContent .top,
-.expertise .mainWrapper .blocksWrapper .top,
-.contact .mainWrapper .blocksContent .top,
-.contact .mainWrapper .blocksWrapper .top {
+  .home main .blocksContent .top,
+.home main .blocksWrapper .top,
+.work main .blocksContent .top,
+.work main .blocksWrapper .top,
+.about main .blocksContent .top,
+.about main .blocksWrapper .top,
+.expertise main .blocksContent .top,
+.expertise main .blocksWrapper .top,
+.contact main .blocksContent .top,
+.contact main .blocksWrapper .top {
     margin-right: -5px;
     margin-top: -5px;
     margin-left: -5px;
@@ -9132,253 +9297,255 @@ main .homepage-grid .block.b-16 {
 .contact .container {
     width: 740px;
   }
-  .home .mainWrapper,
-.work .mainWrapper,
-.about .mainWrapper,
-.expertise .mainWrapper,
-.contact .mainWrapper {
+  .home main,
+.work main,
+.about main,
+.expertise main,
+.contact main {
+    display: flex;
+    flex-flow: column;
     width: 700px;
   }
-  .home .mainWrapper .blocksContent .block,
-.home .mainWrapper .blocksWrapper .block,
-.work .mainWrapper .blocksContent .block,
-.work .mainWrapper .blocksWrapper .block,
-.about .mainWrapper .blocksContent .block,
-.about .mainWrapper .blocksWrapper .block,
-.expertise .mainWrapper .blocksContent .block,
-.expertise .mainWrapper .blocksWrapper .block,
-.contact .mainWrapper .blocksContent .block,
-.contact .mainWrapper .blocksWrapper .block {
+  .home main .blocksContent .block,
+.home main .blocksWrapper .block,
+.work main .blocksContent .block,
+.work main .blocksWrapper .block,
+.about main .blocksContent .block,
+.about main .blocksWrapper .block,
+.expertise main .blocksContent .block,
+.expertise main .blocksWrapper .block,
+.contact main .blocksContent .block,
+.contact main .blocksWrapper .block {
     margin: 10px;
   }
-  .home .mainWrapper .blocksContent .block .content,
-.home .mainWrapper .blocksWrapper .block .content,
-.work .mainWrapper .blocksContent .block .content,
-.work .mainWrapper .blocksWrapper .block .content,
-.about .mainWrapper .blocksContent .block .content,
-.about .mainWrapper .blocksWrapper .block .content,
-.expertise .mainWrapper .blocksContent .block .content,
-.expertise .mainWrapper .blocksWrapper .block .content,
-.contact .mainWrapper .blocksContent .block .content,
-.contact .mainWrapper .blocksWrapper .block .content {
+  .home main .blocksContent .block .content,
+.home main .blocksWrapper .block .content,
+.work main .blocksContent .block .content,
+.work main .blocksWrapper .block .content,
+.about main .blocksContent .block .content,
+.about main .blocksWrapper .block .content,
+.expertise main .blocksContent .block .content,
+.expertise main .blocksWrapper .block .content,
+.contact main .blocksContent .block .content,
+.contact main .blocksWrapper .block .content {
     background-position: center;
     background-size: 100% 100%;
   }
-  .home .mainWrapper .blocksContent .blockMainRow,
-.home .mainWrapper .blocksWrapper .blockMainRow,
-.work .mainWrapper .blocksContent .blockMainRow,
-.work .mainWrapper .blocksWrapper .blockMainRow,
-.about .mainWrapper .blocksContent .blockMainRow,
-.about .mainWrapper .blocksWrapper .blockMainRow,
-.expertise .mainWrapper .blocksContent .blockMainRow,
-.expertise .mainWrapper .blocksWrapper .blockMainRow,
-.contact .mainWrapper .blocksContent .blockMainRow,
-.contact .mainWrapper .blocksWrapper .blockMainRow {
+  .home main .blocksContent .blockMainRow,
+.home main .blocksWrapper .blockMainRow,
+.work main .blocksContent .blockMainRow,
+.work main .blocksWrapper .blockMainRow,
+.about main .blocksContent .blockMainRow,
+.about main .blocksWrapper .blockMainRow,
+.expertise main .blocksContent .blockMainRow,
+.expertise main .blocksWrapper .blockMainRow,
+.contact main .blocksContent .blockMainRow,
+.contact main .blocksWrapper .blockMainRow {
     margin-left: -10px;
   }
-  .home .mainWrapper .blocksContent .type-a,
-.home .mainWrapper .blocksWrapper .type-a,
-.work .mainWrapper .blocksContent .type-a,
-.work .mainWrapper .blocksWrapper .type-a,
-.about .mainWrapper .blocksContent .type-a,
-.about .mainWrapper .blocksWrapper .type-a,
-.expertise .mainWrapper .blocksContent .type-a,
-.expertise .mainWrapper .blocksWrapper .type-a,
-.contact .mainWrapper .blocksContent .type-a,
-.contact .mainWrapper .blocksWrapper .type-a {
+  .home main .blocksContent .type-a,
+.home main .blocksWrapper .type-a,
+.work main .blocksContent .type-a,
+.work main .blocksWrapper .type-a,
+.about main .blocksContent .type-a,
+.about main .blocksWrapper .type-a,
+.expertise main .blocksContent .type-a,
+.expertise main .blocksWrapper .type-a,
+.contact main .blocksContent .type-a,
+.contact main .blocksWrapper .type-a {
     width: 460px;
     height: 140px;
   }
-  .home .mainWrapper .blocksContent .type-b,
-.home .mainWrapper .blocksWrapper .type-b,
-.work .mainWrapper .blocksContent .type-b,
-.work .mainWrapper .blocksWrapper .type-b,
-.about .mainWrapper .blocksContent .type-b,
-.about .mainWrapper .blocksWrapper .type-b,
-.expertise .mainWrapper .blocksContent .type-b,
-.expertise .mainWrapper .blocksWrapper .type-b,
-.contact .mainWrapper .blocksContent .type-b,
-.contact .mainWrapper .blocksWrapper .type-b {
+  .home main .blocksContent .type-b,
+.home main .blocksWrapper .type-b,
+.work main .blocksContent .type-b,
+.work main .blocksWrapper .type-b,
+.about main .blocksContent .type-b,
+.about main .blocksWrapper .type-b,
+.expertise main .blocksContent .type-b,
+.expertise main .blocksWrapper .type-b,
+.contact main .blocksContent .type-b,
+.contact main .blocksWrapper .type-b {
     width: 220px;
     height: 300px;
   }
-  .home .mainWrapper .blocksContent .type-c,
-.home .mainWrapper .blocksWrapper .type-c,
-.work .mainWrapper .blocksContent .type-c,
-.work .mainWrapper .blocksWrapper .type-c,
-.about .mainWrapper .blocksContent .type-c,
-.about .mainWrapper .blocksWrapper .type-c,
-.expertise .mainWrapper .blocksContent .type-c,
-.expertise .mainWrapper .blocksWrapper .type-c,
-.contact .mainWrapper .blocksContent .type-c,
-.contact .mainWrapper .blocksWrapper .type-c {
+  .home main .blocksContent .type-c,
+.home main .blocksWrapper .type-c,
+.work main .blocksContent .type-c,
+.work main .blocksWrapper .type-c,
+.about main .blocksContent .type-c,
+.about main .blocksWrapper .type-c,
+.expertise main .blocksContent .type-c,
+.expertise main .blocksWrapper .type-c,
+.contact main .blocksContent .type-c,
+.contact main .blocksWrapper .type-c {
     width: 460px;
     height: 300px;
   }
-  .home .mainWrapper .blocksContent .type-d,
-.home .mainWrapper .blocksWrapper .type-d,
-.work .mainWrapper .blocksContent .type-d,
-.work .mainWrapper .blocksWrapper .type-d,
-.about .mainWrapper .blocksContent .type-d,
-.about .mainWrapper .blocksWrapper .type-d,
-.expertise .mainWrapper .blocksContent .type-d,
-.expertise .mainWrapper .blocksWrapper .type-d,
-.contact .mainWrapper .blocksContent .type-d,
-.contact .mainWrapper .blocksWrapper .type-d {
+  .home main .blocksContent .type-d,
+.home main .blocksWrapper .type-d,
+.work main .blocksContent .type-d,
+.work main .blocksWrapper .type-d,
+.about main .blocksContent .type-d,
+.about main .blocksWrapper .type-d,
+.expertise main .blocksContent .type-d,
+.expertise main .blocksWrapper .type-d,
+.contact main .blocksContent .type-d,
+.contact main .blocksWrapper .type-d {
     width: 220px;
     height: 140px;
   }
-  .home .mainWrapper .blocksContent .type-e,
-.home .mainWrapper .blocksWrapper .type-e,
-.work .mainWrapper .blocksContent .type-e,
-.work .mainWrapper .blocksWrapper .type-e,
-.about .mainWrapper .blocksContent .type-e,
-.about .mainWrapper .blocksWrapper .type-e,
-.expertise .mainWrapper .blocksContent .type-e,
-.expertise .mainWrapper .blocksWrapper .type-e,
-.contact .mainWrapper .blocksContent .type-e,
-.contact .mainWrapper .blocksWrapper .type-e {
+  .home main .blocksContent .type-e,
+.home main .blocksWrapper .type-e,
+.work main .blocksContent .type-e,
+.work main .blocksWrapper .type-e,
+.about main .blocksContent .type-e,
+.about main .blocksWrapper .type-e,
+.expertise main .blocksContent .type-e,
+.expertise main .blocksWrapper .type-e,
+.contact main .blocksContent .type-e,
+.contact main .blocksWrapper .type-e {
     width: 340px;
     height: 220px;
   }
-  .home .mainWrapper .blocksContent .type-f,
-.home .mainWrapper .blocksWrapper .type-f,
-.work .mainWrapper .blocksContent .type-f,
-.work .mainWrapper .blocksWrapper .type-f,
-.about .mainWrapper .blocksContent .type-f,
-.about .mainWrapper .blocksWrapper .type-f,
-.expertise .mainWrapper .blocksContent .type-f,
-.expertise .mainWrapper .blocksWrapper .type-f,
-.contact .mainWrapper .blocksContent .type-f,
-.contact .mainWrapper .blocksWrapper .type-f {
+  .home main .blocksContent .type-f,
+.home main .blocksWrapper .type-f,
+.work main .blocksContent .type-f,
+.work main .blocksWrapper .type-f,
+.about main .blocksContent .type-f,
+.about main .blocksWrapper .type-f,
+.expertise main .blocksContent .type-f,
+.expertise main .blocksWrapper .type-f,
+.contact main .blocksContent .type-f,
+.contact main .blocksWrapper .type-f {
     width: 700px;
     height: 60px;
   }
-  .home .mainWrapper .blocksContent .type-fa,
-.home .mainWrapper .blocksWrapper .type-fa,
-.work .mainWrapper .blocksContent .type-fa,
-.work .mainWrapper .blocksWrapper .type-fa,
-.about .mainWrapper .blocksContent .type-fa,
-.about .mainWrapper .blocksWrapper .type-fa,
-.expertise .mainWrapper .blocksContent .type-fa,
-.expertise .mainWrapper .blocksWrapper .type-fa,
-.contact .mainWrapper .blocksContent .type-fa,
-.contact .mainWrapper .blocksWrapper .type-fa {
+  .home main .blocksContent .type-fa,
+.home main .blocksWrapper .type-fa,
+.work main .blocksContent .type-fa,
+.work main .blocksWrapper .type-fa,
+.about main .blocksContent .type-fa,
+.about main .blocksWrapper .type-fa,
+.expertise main .blocksContent .type-fa,
+.expertise main .blocksWrapper .type-fa,
+.contact main .blocksContent .type-fa,
+.contact main .blocksWrapper .type-fa {
     width: 700px;
     height: 20px;
   }
-  .home .mainWrapper .blocksContent .type-g,
-.home .mainWrapper .blocksWrapper .type-g,
-.work .mainWrapper .blocksContent .type-g,
-.work .mainWrapper .blocksWrapper .type-g,
-.about .mainWrapper .blocksContent .type-g,
-.about .mainWrapper .blocksWrapper .type-g,
-.expertise .mainWrapper .blocksContent .type-g,
-.expertise .mainWrapper .blocksWrapper .type-g,
-.contact .mainWrapper .blocksContent .type-g,
-.contact .mainWrapper .blocksWrapper .type-g {
+  .home main .blocksContent .type-g,
+.home main .blocksWrapper .type-g,
+.work main .blocksContent .type-g,
+.work main .blocksWrapper .type-g,
+.about main .blocksContent .type-g,
+.about main .blocksWrapper .type-g,
+.expertise main .blocksContent .type-g,
+.expertise main .blocksWrapper .type-g,
+.contact main .blocksContent .type-g,
+.contact main .blocksWrapper .type-g {
     width: 700px;
     height: 140px;
   }
-  .home .mainWrapper .blocksContent .type-h,
-.home .mainWrapper .blocksWrapper .type-h,
-.work .mainWrapper .blocksContent .type-h,
-.work .mainWrapper .blocksWrapper .type-h,
-.about .mainWrapper .blocksContent .type-h,
-.about .mainWrapper .blocksWrapper .type-h,
-.expertise .mainWrapper .blocksContent .type-h,
-.expertise .mainWrapper .blocksWrapper .type-h,
-.contact .mainWrapper .blocksContent .type-h,
-.contact .mainWrapper .blocksWrapper .type-h {
+  .home main .blocksContent .type-h,
+.home main .blocksWrapper .type-h,
+.work main .blocksContent .type-h,
+.work main .blocksWrapper .type-h,
+.about main .blocksContent .type-h,
+.about main .blocksWrapper .type-h,
+.expertise main .blocksContent .type-h,
+.expertise main .blocksWrapper .type-h,
+.contact main .blocksContent .type-h,
+.contact main .blocksWrapper .type-h {
     width: 700px;
     height: 140px;
   }
-  .home .mainWrapper .blocksContent .type-i,
-.home .mainWrapper .blocksWrapper .type-i,
-.work .mainWrapper .blocksContent .type-i,
-.work .mainWrapper .blocksWrapper .type-i,
-.about .mainWrapper .blocksContent .type-i,
-.about .mainWrapper .blocksWrapper .type-i,
-.expertise .mainWrapper .blocksContent .type-i,
-.expertise .mainWrapper .blocksWrapper .type-i,
-.contact .mainWrapper .blocksContent .type-i,
-.contact .mainWrapper .blocksWrapper .type-i {
+  .home main .blocksContent .type-i,
+.home main .blocksWrapper .type-i,
+.work main .blocksContent .type-i,
+.work main .blocksWrapper .type-i,
+.about main .blocksContent .type-i,
+.about main .blocksWrapper .type-i,
+.expertise main .blocksContent .type-i,
+.expertise main .blocksWrapper .type-i,
+.contact main .blocksContent .type-i,
+.contact main .blocksWrapper .type-i {
     width: 460px;
   }
-  .home .mainWrapper .blocksContent .type-j,
-.home .mainWrapper .blocksWrapper .type-j,
-.work .mainWrapper .blocksContent .type-j,
-.work .mainWrapper .blocksWrapper .type-j,
-.about .mainWrapper .blocksContent .type-j,
-.about .mainWrapper .blocksWrapper .type-j,
-.expertise .mainWrapper .blocksContent .type-j,
-.expertise .mainWrapper .blocksWrapper .type-j,
-.contact .mainWrapper .blocksContent .type-j,
-.contact .mainWrapper .blocksWrapper .type-j {
+  .home main .blocksContent .type-j,
+.home main .blocksWrapper .type-j,
+.work main .blocksContent .type-j,
+.work main .blocksWrapper .type-j,
+.about main .blocksContent .type-j,
+.about main .blocksWrapper .type-j,
+.expertise main .blocksContent .type-j,
+.expertise main .blocksWrapper .type-j,
+.contact main .blocksContent .type-j,
+.contact main .blocksWrapper .type-j {
     width: 460px;
   }
-  .home .mainWrapper .blocksContent .type-ja,
-.home .mainWrapper .blocksWrapper .type-ja,
-.work .mainWrapper .blocksContent .type-ja,
-.work .mainWrapper .blocksWrapper .type-ja,
-.about .mainWrapper .blocksContent .type-ja,
-.about .mainWrapper .blocksWrapper .type-ja,
-.expertise .mainWrapper .blocksContent .type-ja,
-.expertise .mainWrapper .blocksWrapper .type-ja,
-.contact .mainWrapper .blocksContent .type-ja,
-.contact .mainWrapper .blocksWrapper .type-ja {
+  .home main .blocksContent .type-ja,
+.home main .blocksWrapper .type-ja,
+.work main .blocksContent .type-ja,
+.work main .blocksWrapper .type-ja,
+.about main .blocksContent .type-ja,
+.about main .blocksWrapper .type-ja,
+.expertise main .blocksContent .type-ja,
+.expertise main .blocksWrapper .type-ja,
+.contact main .blocksContent .type-ja,
+.contact main .blocksWrapper .type-ja {
     width: 460px;
     height: 20px;
   }
-  .home .mainWrapper .blocksContent .type-k,
-.home .mainWrapper .blocksWrapper .type-k,
-.work .mainWrapper .blocksContent .type-k,
-.work .mainWrapper .blocksWrapper .type-k,
-.about .mainWrapper .blocksContent .type-k,
-.about .mainWrapper .blocksWrapper .type-k,
-.expertise .mainWrapper .blocksContent .type-k,
-.expertise .mainWrapper .blocksWrapper .type-k,
-.contact .mainWrapper .blocksContent .type-k,
-.contact .mainWrapper .blocksWrapper .type-k {
+  .home main .blocksContent .type-k,
+.home main .blocksWrapper .type-k,
+.work main .blocksContent .type-k,
+.work main .blocksWrapper .type-k,
+.about main .blocksContent .type-k,
+.about main .blocksWrapper .type-k,
+.expertise main .blocksContent .type-k,
+.expertise main .blocksWrapper .type-k,
+.contact main .blocksContent .type-k,
+.contact main .blocksWrapper .type-k {
     width: 340px;
     height: 220px;
   }
-  .home .mainWrapper .blocksContent .type-l,
-.home .mainWrapper .blocksWrapper .type-l,
-.work .mainWrapper .blocksContent .type-l,
-.work .mainWrapper .blocksWrapper .type-l,
-.about .mainWrapper .blocksContent .type-l,
-.about .mainWrapper .blocksWrapper .type-l,
-.expertise .mainWrapper .blocksContent .type-l,
-.expertise .mainWrapper .blocksWrapper .type-l,
-.contact .mainWrapper .blocksContent .type-l,
-.contact .mainWrapper .blocksWrapper .type-l {
+  .home main .blocksContent .type-l,
+.home main .blocksWrapper .type-l,
+.work main .blocksContent .type-l,
+.work main .blocksWrapper .type-l,
+.about main .blocksContent .type-l,
+.about main .blocksWrapper .type-l,
+.expertise main .blocksContent .type-l,
+.expertise main .blocksWrapper .type-l,
+.contact main .blocksContent .type-l,
+.contact main .blocksWrapper .type-l {
     width: 700px;
   }
-  .home .mainWrapper .blocksContent .bottom,
-.home .mainWrapper .blocksWrapper .bottom,
-.work .mainWrapper .blocksContent .bottom,
-.work .mainWrapper .blocksWrapper .bottom,
-.about .mainWrapper .blocksContent .bottom,
-.about .mainWrapper .blocksWrapper .bottom,
-.expertise .mainWrapper .blocksContent .bottom,
-.expertise .mainWrapper .blocksWrapper .bottom,
-.contact .mainWrapper .blocksContent .bottom,
-.contact .mainWrapper .blocksWrapper .bottom {
+  .home main .blocksContent .bottom,
+.home main .blocksWrapper .bottom,
+.work main .blocksContent .bottom,
+.work main .blocksWrapper .bottom,
+.about main .blocksContent .bottom,
+.about main .blocksWrapper .bottom,
+.expertise main .blocksContent .bottom,
+.expertise main .blocksWrapper .bottom,
+.contact main .blocksContent .bottom,
+.contact main .blocksWrapper .bottom {
     margin-right: -10px;
     margin-bottom: 0;
     margin-left: -10px;
   }
-  .home .mainWrapper .blocksContent .top,
-.home .mainWrapper .blocksWrapper .top,
-.work .mainWrapper .blocksContent .top,
-.work .mainWrapper .blocksWrapper .top,
-.about .mainWrapper .blocksContent .top,
-.about .mainWrapper .blocksWrapper .top,
-.expertise .mainWrapper .blocksContent .top,
-.expertise .mainWrapper .blocksWrapper .top,
-.contact .mainWrapper .blocksContent .top,
-.contact .mainWrapper .blocksWrapper .top {
+  .home main .blocksContent .top,
+.home main .blocksWrapper .top,
+.work main .blocksContent .top,
+.work main .blocksWrapper .top,
+.about main .blocksContent .top,
+.about main .blocksWrapper .top,
+.expertise main .blocksContent .top,
+.expertise main .blocksWrapper .top,
+.contact main .blocksContent .top,
+.contact main .blocksWrapper .top {
     margin-right: -10px;
     margin-top: -10px;
     margin-left: -10px;
@@ -9392,253 +9559,255 @@ main .homepage-grid .block.b-16 {
 .contact .container {
     width: 976px;
   }
-  .home .mainWrapper,
-.work .mainWrapper,
-.about .mainWrapper,
-.expertise .mainWrapper,
-.contact .mainWrapper {
+  .home main,
+.work main,
+.about main,
+.expertise main,
+.contact main {
+    display: flex;
+    flex-flow: column;
     width: 944px;
   }
-  .home .mainWrapper .blocksContent .block,
-.home .mainWrapper .blocksWrapper .block,
-.work .mainWrapper .blocksContent .block,
-.work .mainWrapper .blocksWrapper .block,
-.about .mainWrapper .blocksContent .block,
-.about .mainWrapper .blocksWrapper .block,
-.expertise .mainWrapper .blocksContent .block,
-.expertise .mainWrapper .blocksWrapper .block,
-.contact .mainWrapper .blocksContent .block,
-.contact .mainWrapper .blocksWrapper .block {
+  .home main .blocksContent .block,
+.home main .blocksWrapper .block,
+.work main .blocksContent .block,
+.work main .blocksWrapper .block,
+.about main .blocksContent .block,
+.about main .blocksWrapper .block,
+.expertise main .blocksContent .block,
+.expertise main .blocksWrapper .block,
+.contact main .blocksContent .block,
+.contact main .blocksWrapper .block {
     margin: 8px;
   }
-  .home .mainWrapper .blocksContent .block .content,
-.home .mainWrapper .blocksWrapper .block .content,
-.work .mainWrapper .blocksContent .block .content,
-.work .mainWrapper .blocksWrapper .block .content,
-.about .mainWrapper .blocksContent .block .content,
-.about .mainWrapper .blocksWrapper .block .content,
-.expertise .mainWrapper .blocksContent .block .content,
-.expertise .mainWrapper .blocksWrapper .block .content,
-.contact .mainWrapper .blocksContent .block .content,
-.contact .mainWrapper .blocksWrapper .block .content {
+  .home main .blocksContent .block .content,
+.home main .blocksWrapper .block .content,
+.work main .blocksContent .block .content,
+.work main .blocksWrapper .block .content,
+.about main .blocksContent .block .content,
+.about main .blocksWrapper .block .content,
+.expertise main .blocksContent .block .content,
+.expertise main .blocksWrapper .block .content,
+.contact main .blocksContent .block .content,
+.contact main .blocksWrapper .block .content {
     background-position: center;
     background-size: 100% 100%;
   }
-  .home .mainWrapper .blocksContent .blockMainRow,
-.home .mainWrapper .blocksWrapper .blockMainRow,
-.work .mainWrapper .blocksContent .blockMainRow,
-.work .mainWrapper .blocksWrapper .blockMainRow,
-.about .mainWrapper .blocksContent .blockMainRow,
-.about .mainWrapper .blocksWrapper .blockMainRow,
-.expertise .mainWrapper .blocksContent .blockMainRow,
-.expertise .mainWrapper .blocksWrapper .blockMainRow,
-.contact .mainWrapper .blocksContent .blockMainRow,
-.contact .mainWrapper .blocksWrapper .blockMainRow {
+  .home main .blocksContent .blockMainRow,
+.home main .blocksWrapper .blockMainRow,
+.work main .blocksContent .blockMainRow,
+.work main .blocksWrapper .blockMainRow,
+.about main .blocksContent .blockMainRow,
+.about main .blocksWrapper .blockMainRow,
+.expertise main .blocksContent .blockMainRow,
+.expertise main .blocksWrapper .blockMainRow,
+.contact main .blocksContent .blockMainRow,
+.contact main .blocksWrapper .blockMainRow {
     margin-left: -8px;
   }
-  .home .mainWrapper .blocksContent .type-a,
-.home .mainWrapper .blocksWrapper .type-a,
-.work .mainWrapper .blocksContent .type-a,
-.work .mainWrapper .blocksWrapper .type-a,
-.about .mainWrapper .blocksContent .type-a,
-.about .mainWrapper .blocksWrapper .type-a,
-.expertise .mainWrapper .blocksContent .type-a,
-.expertise .mainWrapper .blocksWrapper .type-a,
-.contact .mainWrapper .blocksContent .type-a,
-.contact .mainWrapper .blocksWrapper .type-a {
+  .home main .blocksContent .type-a,
+.home main .blocksWrapper .type-a,
+.work main .blocksContent .type-a,
+.work main .blocksWrapper .type-a,
+.about main .blocksContent .type-a,
+.about main .blocksWrapper .type-a,
+.expertise main .blocksContent .type-a,
+.expertise main .blocksWrapper .type-a,
+.contact main .blocksContent .type-a,
+.contact main .blocksWrapper .type-a {
     width: 368px;
     height: 112px;
   }
-  .home .mainWrapper .blocksContent .type-b,
-.home .mainWrapper .blocksWrapper .type-b,
-.work .mainWrapper .blocksContent .type-b,
-.work .mainWrapper .blocksWrapper .type-b,
-.about .mainWrapper .blocksContent .type-b,
-.about .mainWrapper .blocksWrapper .type-b,
-.expertise .mainWrapper .blocksContent .type-b,
-.expertise .mainWrapper .blocksWrapper .type-b,
-.contact .mainWrapper .blocksContent .type-b,
-.contact .mainWrapper .blocksWrapper .type-b {
+  .home main .blocksContent .type-b,
+.home main .blocksWrapper .type-b,
+.work main .blocksContent .type-b,
+.work main .blocksWrapper .type-b,
+.about main .blocksContent .type-b,
+.about main .blocksWrapper .type-b,
+.expertise main .blocksContent .type-b,
+.expertise main .blocksWrapper .type-b,
+.contact main .blocksContent .type-b,
+.contact main .blocksWrapper .type-b {
     width: 176px;
     height: 240px;
   }
-  .home .mainWrapper .blocksContent .type-c,
-.home .mainWrapper .blocksWrapper .type-c,
-.work .mainWrapper .blocksContent .type-c,
-.work .mainWrapper .blocksWrapper .type-c,
-.about .mainWrapper .blocksContent .type-c,
-.about .mainWrapper .blocksWrapper .type-c,
-.expertise .mainWrapper .blocksContent .type-c,
-.expertise .mainWrapper .blocksWrapper .type-c,
-.contact .mainWrapper .blocksContent .type-c,
-.contact .mainWrapper .blocksWrapper .type-c {
+  .home main .blocksContent .type-c,
+.home main .blocksWrapper .type-c,
+.work main .blocksContent .type-c,
+.work main .blocksWrapper .type-c,
+.about main .blocksContent .type-c,
+.about main .blocksWrapper .type-c,
+.expertise main .blocksContent .type-c,
+.expertise main .blocksWrapper .type-c,
+.contact main .blocksContent .type-c,
+.contact main .blocksWrapper .type-c {
     width: 368px;
     height: 240px;
   }
-  .home .mainWrapper .blocksContent .type-d,
-.home .mainWrapper .blocksWrapper .type-d,
-.work .mainWrapper .blocksContent .type-d,
-.work .mainWrapper .blocksWrapper .type-d,
-.about .mainWrapper .blocksContent .type-d,
-.about .mainWrapper .blocksWrapper .type-d,
-.expertise .mainWrapper .blocksContent .type-d,
-.expertise .mainWrapper .blocksWrapper .type-d,
-.contact .mainWrapper .blocksContent .type-d,
-.contact .mainWrapper .blocksWrapper .type-d {
+  .home main .blocksContent .type-d,
+.home main .blocksWrapper .type-d,
+.work main .blocksContent .type-d,
+.work main .blocksWrapper .type-d,
+.about main .blocksContent .type-d,
+.about main .blocksWrapper .type-d,
+.expertise main .blocksContent .type-d,
+.expertise main .blocksWrapper .type-d,
+.contact main .blocksContent .type-d,
+.contact main .blocksWrapper .type-d {
     width: 176px;
     height: 112px;
   }
-  .home .mainWrapper .blocksContent .type-e,
-.home .mainWrapper .blocksWrapper .type-e,
-.work .mainWrapper .blocksContent .type-e,
-.work .mainWrapper .blocksWrapper .type-e,
-.about .mainWrapper .blocksContent .type-e,
-.about .mainWrapper .blocksWrapper .type-e,
-.expertise .mainWrapper .blocksContent .type-e,
-.expertise .mainWrapper .blocksWrapper .type-e,
-.contact .mainWrapper .blocksContent .type-e,
-.contact .mainWrapper .blocksWrapper .type-e {
+  .home main .blocksContent .type-e,
+.home main .blocksWrapper .type-e,
+.work main .blocksContent .type-e,
+.work main .blocksWrapper .type-e,
+.about main .blocksContent .type-e,
+.about main .blocksWrapper .type-e,
+.expertise main .blocksContent .type-e,
+.expertise main .blocksWrapper .type-e,
+.contact main .blocksContent .type-e,
+.contact main .blocksWrapper .type-e {
     width: 464px;
     height: 304px;
   }
-  .home .mainWrapper .blocksContent .type-f,
-.home .mainWrapper .blocksWrapper .type-f,
-.work .mainWrapper .blocksContent .type-f,
-.work .mainWrapper .blocksWrapper .type-f,
-.about .mainWrapper .blocksContent .type-f,
-.about .mainWrapper .blocksWrapper .type-f,
-.expertise .mainWrapper .blocksContent .type-f,
-.expertise .mainWrapper .blocksWrapper .type-f,
-.contact .mainWrapper .blocksContent .type-f,
-.contact .mainWrapper .blocksWrapper .type-f {
+  .home main .blocksContent .type-f,
+.home main .blocksWrapper .type-f,
+.work main .blocksContent .type-f,
+.work main .blocksWrapper .type-f,
+.about main .blocksContent .type-f,
+.about main .blocksWrapper .type-f,
+.expertise main .blocksContent .type-f,
+.expertise main .blocksWrapper .type-f,
+.contact main .blocksContent .type-f,
+.contact main .blocksWrapper .type-f {
     width: 944px;
     height: 48px;
   }
-  .home .mainWrapper .blocksContent .type-fa,
-.home .mainWrapper .blocksWrapper .type-fa,
-.work .mainWrapper .blocksContent .type-fa,
-.work .mainWrapper .blocksWrapper .type-fa,
-.about .mainWrapper .blocksContent .type-fa,
-.about .mainWrapper .blocksWrapper .type-fa,
-.expertise .mainWrapper .blocksContent .type-fa,
-.expertise .mainWrapper .blocksWrapper .type-fa,
-.contact .mainWrapper .blocksContent .type-fa,
-.contact .mainWrapper .blocksWrapper .type-fa {
+  .home main .blocksContent .type-fa,
+.home main .blocksWrapper .type-fa,
+.work main .blocksContent .type-fa,
+.work main .blocksWrapper .type-fa,
+.about main .blocksContent .type-fa,
+.about main .blocksWrapper .type-fa,
+.expertise main .blocksContent .type-fa,
+.expertise main .blocksWrapper .type-fa,
+.contact main .blocksContent .type-fa,
+.contact main .blocksWrapper .type-fa {
     width: 944px;
     height: 16px;
   }
-  .home .mainWrapper .blocksContent .type-g,
-.home .mainWrapper .blocksWrapper .type-g,
-.work .mainWrapper .blocksContent .type-g,
-.work .mainWrapper .blocksWrapper .type-g,
-.about .mainWrapper .blocksContent .type-g,
-.about .mainWrapper .blocksWrapper .type-g,
-.expertise .mainWrapper .blocksContent .type-g,
-.expertise .mainWrapper .blocksWrapper .type-g,
-.contact .mainWrapper .blocksContent .type-g,
-.contact .mainWrapper .blocksWrapper .type-g {
+  .home main .blocksContent .type-g,
+.home main .blocksWrapper .type-g,
+.work main .blocksContent .type-g,
+.work main .blocksWrapper .type-g,
+.about main .blocksContent .type-g,
+.about main .blocksWrapper .type-g,
+.expertise main .blocksContent .type-g,
+.expertise main .blocksWrapper .type-g,
+.contact main .blocksContent .type-g,
+.contact main .blocksWrapper .type-g {
     width: 944px;
     height: 112px;
   }
-  .home .mainWrapper .blocksContent .type-h,
-.home .mainWrapper .blocksWrapper .type-h,
-.work .mainWrapper .blocksContent .type-h,
-.work .mainWrapper .blocksWrapper .type-h,
-.about .mainWrapper .blocksContent .type-h,
-.about .mainWrapper .blocksWrapper .type-h,
-.expertise .mainWrapper .blocksContent .type-h,
-.expertise .mainWrapper .blocksWrapper .type-h,
-.contact .mainWrapper .blocksContent .type-h,
-.contact .mainWrapper .blocksWrapper .type-h {
+  .home main .blocksContent .type-h,
+.home main .blocksWrapper .type-h,
+.work main .blocksContent .type-h,
+.work main .blocksWrapper .type-h,
+.about main .blocksContent .type-h,
+.about main .blocksWrapper .type-h,
+.expertise main .blocksContent .type-h,
+.expertise main .blocksWrapper .type-h,
+.contact main .blocksContent .type-h,
+.contact main .blocksWrapper .type-h {
     width: 944px;
     height: 112px;
   }
-  .home .mainWrapper .blocksContent .type-i,
-.home .mainWrapper .blocksWrapper .type-i,
-.work .mainWrapper .blocksContent .type-i,
-.work .mainWrapper .blocksWrapper .type-i,
-.about .mainWrapper .blocksContent .type-i,
-.about .mainWrapper .blocksWrapper .type-i,
-.expertise .mainWrapper .blocksContent .type-i,
-.expertise .mainWrapper .blocksWrapper .type-i,
-.contact .mainWrapper .blocksContent .type-i,
-.contact .mainWrapper .blocksWrapper .type-i {
+  .home main .blocksContent .type-i,
+.home main .blocksWrapper .type-i,
+.work main .blocksContent .type-i,
+.work main .blocksWrapper .type-i,
+.about main .blocksContent .type-i,
+.about main .blocksWrapper .type-i,
+.expertise main .blocksContent .type-i,
+.expertise main .blocksWrapper .type-i,
+.contact main .blocksContent .type-i,
+.contact main .blocksWrapper .type-i {
     width: 752px;
   }
-  .home .mainWrapper .blocksContent .type-j,
-.home .mainWrapper .blocksWrapper .type-j,
-.work .mainWrapper .blocksContent .type-j,
-.work .mainWrapper .blocksWrapper .type-j,
-.about .mainWrapper .blocksContent .type-j,
-.about .mainWrapper .blocksWrapper .type-j,
-.expertise .mainWrapper .blocksContent .type-j,
-.expertise .mainWrapper .blocksWrapper .type-j,
-.contact .mainWrapper .blocksContent .type-j,
-.contact .mainWrapper .blocksWrapper .type-j {
+  .home main .blocksContent .type-j,
+.home main .blocksWrapper .type-j,
+.work main .blocksContent .type-j,
+.work main .blocksWrapper .type-j,
+.about main .blocksContent .type-j,
+.about main .blocksWrapper .type-j,
+.expertise main .blocksContent .type-j,
+.expertise main .blocksWrapper .type-j,
+.contact main .blocksContent .type-j,
+.contact main .blocksWrapper .type-j {
     width: 560px;
   }
-  .home .mainWrapper .blocksContent .type-ja,
-.home .mainWrapper .blocksWrapper .type-ja,
-.work .mainWrapper .blocksContent .type-ja,
-.work .mainWrapper .blocksWrapper .type-ja,
-.about .mainWrapper .blocksContent .type-ja,
-.about .mainWrapper .blocksWrapper .type-ja,
-.expertise .mainWrapper .blocksContent .type-ja,
-.expertise .mainWrapper .blocksWrapper .type-ja,
-.contact .mainWrapper .blocksContent .type-ja,
-.contact .mainWrapper .blocksWrapper .type-ja {
+  .home main .blocksContent .type-ja,
+.home main .blocksWrapper .type-ja,
+.work main .blocksContent .type-ja,
+.work main .blocksWrapper .type-ja,
+.about main .blocksContent .type-ja,
+.about main .blocksWrapper .type-ja,
+.expertise main .blocksContent .type-ja,
+.expertise main .blocksWrapper .type-ja,
+.contact main .blocksContent .type-ja,
+.contact main .blocksWrapper .type-ja {
     width: 560px;
     height: 16px;
   }
-  .home .mainWrapper .blocksContent .type-k,
-.home .mainWrapper .blocksWrapper .type-k,
-.work .mainWrapper .blocksContent .type-k,
-.work .mainWrapper .blocksWrapper .type-k,
-.about .mainWrapper .blocksContent .type-k,
-.about .mainWrapper .blocksWrapper .type-k,
-.expertise .mainWrapper .blocksContent .type-k,
-.expertise .mainWrapper .blocksWrapper .type-k,
-.contact .mainWrapper .blocksContent .type-k,
-.contact .mainWrapper .blocksWrapper .type-k {
+  .home main .blocksContent .type-k,
+.home main .blocksWrapper .type-k,
+.work main .blocksContent .type-k,
+.work main .blocksWrapper .type-k,
+.about main .blocksContent .type-k,
+.about main .blocksWrapper .type-k,
+.expertise main .blocksContent .type-k,
+.expertise main .blocksWrapper .type-k,
+.contact main .blocksContent .type-k,
+.contact main .blocksWrapper .type-k {
     width: 368px;
     height: 240px;
   }
-  .home .mainWrapper .blocksContent .type-l,
-.home .mainWrapper .blocksWrapper .type-l,
-.work .mainWrapper .blocksContent .type-l,
-.work .mainWrapper .blocksWrapper .type-l,
-.about .mainWrapper .blocksContent .type-l,
-.about .mainWrapper .blocksWrapper .type-l,
-.expertise .mainWrapper .blocksContent .type-l,
-.expertise .mainWrapper .blocksWrapper .type-l,
-.contact .mainWrapper .blocksContent .type-l,
-.contact .mainWrapper .blocksWrapper .type-l {
+  .home main .blocksContent .type-l,
+.home main .blocksWrapper .type-l,
+.work main .blocksContent .type-l,
+.work main .blocksWrapper .type-l,
+.about main .blocksContent .type-l,
+.about main .blocksWrapper .type-l,
+.expertise main .blocksContent .type-l,
+.expertise main .blocksWrapper .type-l,
+.contact main .blocksContent .type-l,
+.contact main .blocksWrapper .type-l {
     width: 944px;
   }
-  .home .mainWrapper .blocksContent .bottom,
-.home .mainWrapper .blocksWrapper .bottom,
-.work .mainWrapper .blocksContent .bottom,
-.work .mainWrapper .blocksWrapper .bottom,
-.about .mainWrapper .blocksContent .bottom,
-.about .mainWrapper .blocksWrapper .bottom,
-.expertise .mainWrapper .blocksContent .bottom,
-.expertise .mainWrapper .blocksWrapper .bottom,
-.contact .mainWrapper .blocksContent .bottom,
-.contact .mainWrapper .blocksWrapper .bottom {
+  .home main .blocksContent .bottom,
+.home main .blocksWrapper .bottom,
+.work main .blocksContent .bottom,
+.work main .blocksWrapper .bottom,
+.about main .blocksContent .bottom,
+.about main .blocksWrapper .bottom,
+.expertise main .blocksContent .bottom,
+.expertise main .blocksWrapper .bottom,
+.contact main .blocksContent .bottom,
+.contact main .blocksWrapper .bottom {
     margin-right: -8px;
     margin-bottom: 0;
     margin-left: -8px;
   }
-  .home .mainWrapper .blocksContent .top,
-.home .mainWrapper .blocksWrapper .top,
-.work .mainWrapper .blocksContent .top,
-.work .mainWrapper .blocksWrapper .top,
-.about .mainWrapper .blocksContent .top,
-.about .mainWrapper .blocksWrapper .top,
-.expertise .mainWrapper .blocksContent .top,
-.expertise .mainWrapper .blocksWrapper .top,
-.contact .mainWrapper .blocksContent .top,
-.contact .mainWrapper .blocksWrapper .top {
+  .home main .blocksContent .top,
+.home main .blocksWrapper .top,
+.work main .blocksContent .top,
+.work main .blocksWrapper .top,
+.about main .blocksContent .top,
+.about main .blocksWrapper .top,
+.expertise main .blocksContent .top,
+.expertise main .blocksWrapper .top,
+.contact main .blocksContent .top,
+.contact main .blocksWrapper .top {
     margin-right: -8px;
     margin-top: -8px;
     margin-left: -8px;
@@ -9998,6 +10167,42 @@ footer .rightFooter .arthaus-copyright {
   font-size: 8.8px !important;
 }
 
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
 .home .block .content h1 {
   font-size: 17.6px;
   color: #ffffff !important;
@@ -10023,6 +10228,809 @@ footer .rightFooter .arthaus-copyright {
   .home .block .content h2.caps {
     font-size: 11px;
     color: #ffffff;
+  }
+}
+.about {
+  /* SUB NAV */
+}
+.about nav.sub-nav {
+  background-color: #dddddd;
+  height: 48px;
+  z-index: 150;
+  text-align: center;
+  /*&:after {
+      content: url(/images/about/triangles/triangle-grey.png);
+      position: absolute;
+      margin: 60px 0 0 -278px;
+  }*/
+}
+@media only screen and (max-width: 759px) {
+  .about nav.sub-nav {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about nav.sub-nav .opt {
+    width: 50px;
+    font-size: 11px;
+  }
+}
+.about nav.sub-nav .opt {
+  font-size: 12.8px;
+  font-weight: bold;
+  display: inline-block;
+  height: 32px;
+  width: 128px;
+  margin: 8px 0;
+  padding: 6.4px 0;
+  text-decoration: none;
+}
+.about nav.sub-nav .opt a {
+  color: #525252;
+  text-decoration: none;
+}
+.about nav.sub-nav .active {
+  /*background-color: #525252;
+  color: #fff;*/
+  text-decoration: none;
+  /*&:after {
+      content: url(/images/about/triangles/triangle-darkgrey-small.png);
+      position: absolute;
+      margin: 22px 0 0 -40px;
+  }*/
+}
+.about nav.sub-nav .active a {
+  /*color: white;*/
+  text-decoration: none;
+  cursor: pointer;
+}
+.about nav.sub-nav .active span {
+  border-bottom: 3.2px solid #F28B02;
+  padding-bottom: 3.2px;
+}
+.about .sub-nav-scrolled {
+  position: fixed;
+  max-width: 944px;
+  width: 100%;
+  top: 60.8px;
+}
+@media only screen and (max-width: 1239px) {
+  .about .sub-nav-scrolled {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 759px) {
+  .about .sub-nav-scrolled {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about .sub-nav-scrolled .opt {
+    width: 50px;
+  }
+}
+.about .arrow {
+  max-width: 73px;
+}
+.about .clients-section {
+  margin: 35px 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .about #facts .box-element p.orange {
+    font-size: 50px;
+  }
+}
+.about #facts:focus, .about #people:focus, .about #clients:focus {
+  outline: none;
+}
+.about #facts.sub-nav-clicked, .about #people.sub-nav-clicked, .about #clients.sub-nav-clicked {
+  padding-top: 104px;
+  margin-top: -104px;
+}
+.about #facts.main-nav-clicked, .about #people.main-nav-clicked, .about #clients.main-nav-clicked {
+  padding-top: 152px;
+  margin-top: -152px;
+}
+.about .mainWrapper .blocksWrapper .blockCol .block .icon {
+  width: auto !important;
+}
+.about .grey {
+  background-color: #dddddd;
+  width: 100%;
+  min-height: 32px;
+  text-align: center;
+  padding: 12px 0;
+}
+.about .dark-grey {
+  background-color: #525252;
+  width: 100%;
+  min-height: 32px;
+  text-align: center;
+}
+.about .dark-grey .title {
+  color: #ffffff;
+  padding: 20px 0;
+  margin-bottom: 16px;
+}
+.about .dark-grey .icon {
+  max-height: 40px;
+  width: auto;
+}
+.about .dark-grey .icon-text {
+  color: #ffffff;
+  font-size: 16.8px;
+  margin: 20px 0 36px 0;
+  text-align: center;
+}
+.about .orange {
+  background-color: #f28b00;
+}
+.about .orange .brand-title {
+  margin: 20px 0;
+}
+.about .dark-grey {
+  background-color: #515153;
+}
+.about .dark-grey .testimonial .title {
+  margin: 16px 0 0px 0;
+}
+.about .orange, .about .dark-grey {
+  width: 100%;
+  min-height: 32px;
+  text-align: center;
+}
+.about .orange h2, .about .dark-grey h2 {
+  color: white;
+  font-weight: bold;
+  padding: 0 0 12px 0;
+}
+.about .orange .testimonial, .about .dark-grey .testimonial {
+  font-size: 16.8px;
+  color: white;
+}
+.about .orange .testimonial .quote, .about .dark-grey .testimonial .quote {
+  max-width: 600px;
+  margin: 0 auto;
+  /* TEMPORARY */
+  color: #525252;
+}
+.about .orange .testimonial .name, .about .dark-grey .testimonial .name {
+  margin: 20px 0 36px 0;
+  color: #525252;
+}
+.about .orange .last, .about .dark-grey .last {
+  margin-bottom: 16px;
+}
+.about .white {
+  min-height: 32px;
+  text-align: center;
+  background-color: transparent;
+  /* Image hover effect */
+}
+.about .white div.image-container {
+  margin: 16px auto 64px auto;
+  width: 256px;
+}
+.about .white div.image-container div.imageBox {
+  position: relative;
+  overflow: hidden;
+}
+.about .white div.image-container div.imageBox img {
+  width: 100%;
+  transition: 0.5s;
+  width: 270.4px;
+}
+.about .white div.image-container div.imageBox div.textBox {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #525252;
+  transition: 0.5s;
+  /*&:before {
+      content: url(/images/about/triangles/triangle-darkgrey.png);
+      top: -22px;
+      left: 100px;
+      position: absolute;
+      transform: rotate(180deg);
+  }*/
+}
+.about .white div.image-container div.imageBox div.title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: #fff !important;
+  font-size: 12.8px;
+  font-weight: bold;
+}
+.about .white div.image-container div.imageBox div.subTitle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  color: #fff;
+  font-size: 16px;
+}
+.about .white div.image-container div.imageBox div.text {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 85px;
+  left: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 12.8px;
+  text-align: left;
+}
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .about .white div.image-container div.imageBox {
+    width: 230px;
+  }
+  .about .white div.image-container div.imageBox div.text {
+    font-size: 15px;
+  }
+}
+.about .white div.image-container div.imageBox:hover .textBox {
+  top: 0;
+  background: rgba(82, 82, 82, 0.9);
+}
+.about .white div.image-container div.imageBox:hover img {
+  transform: scale(1.2);
+}
+.about .white .title {
+  padding: 16px 0;
+  font-weight: 100;
+  color: #525252 !important;
+}
+.about .white p {
+  font-size: 12.8px;
+  padding: 0 0 20px 0;
+  max-width: 520px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about .white .box-element {
+  background-color: #eaeaea;
+  min-height: 144px;
+  max-width: 176px;
+  margin: 20px auto 48px auto;
+}
+@media only screen and (max-width: 759px) {
+  .about .white .box-element {
+    margin: 10px auto 28px auto;
+  }
+}
+.about .white .box-element .top {
+  font-size: 12.8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px 0 0 0;
+}
+.about .white .box-element .orange {
+  background-color: #eaeaea;
+  color: #f28b00;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.about .white .box-element .bottom {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+}
+.about .white .profile-image {
+  margin: 10px 0 45px 0;
+}
+.about .white .banner {
+  margin: 0;
+}
+.about .white .client-logo {
+  padding: 25px 0;
+}
+.about .arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 73px;
+  max-height: 20px;
+}
+.about .bottom .block {
+  margin-top: 0 !important;
+}
+.about .quality-assurance {
+  color: #fff;
+  font-size: 14.8px;
+  text-align: left;
+}
+.about .quality-assurance-container {
+  margin: 0 auto;
+  padding-right: 20px;
+  max-width: 590px;
+  padding-bottom: 20px;
+}
+.about #contact {
+  padding: 12px;
+}
+.about #contact .btn {
+  padding-bottom: 2.4px;
+  padding-top: 2.4px;
+  color: #f28b00;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 2px;
+}
+.about #contact .btn:hover {
+  color: #fff;
+  background-color: #f28b00;
+  border: 0.8px solid #fff;
+}
+.about #contact #contactUsModal h2 {
+  color: #525252;
+}
+.about #contact #contactUsModal label {
+  font-size: 14px;
+}
+.about #contact #contactUsModal #contactClose, .about #contact #contactUsModal #contactSave {
+  color: #fff;
+}
+.about #contact #contactUsModal #contactSave {
+  background-color: #f28b00;
+}
+.about #contact #contactUsModal #contactSave:hover {
+  background-color: #fff;
+  color: #f28b00;
+  border: 1px solid #f28b00;
+}
+.about #contact #contactUsModal #contactClose {
+  float: left;
+  background-color: #515151;
+}
+.about #contact #contactUsModal #contactClose:hover {
+  background-color: #fff;
+  color: #66665d;
+  border: 1px solid #66665d;
+}
+.about #contact #contactUsModal textarea {
+  height: 100px;
+  resize: none;
+}
+.about #contact #contactUsModal .modal-header {
+  border-bottom: none;
+}
+.about #contact #contactUsModal .modal-footer {
+  border-top: none;
+}
+@media screen and (max-width: 759px) {
+  .about .mobile-no {
+    display: none !important;
+  }
+}
+
+.expertise {
+  /* SUB NAV */
+  /* TITLE COMPONENT */
+}
+.expertise nav.sub-nav {
+  background-color: #dddddd;
+  height: 48px;
+  z-index: 150;
+  text-align: center;
+}
+@media only screen and (max-width: 759px) {
+  .expertise nav.sub-nav {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .expertise nav.sub-nav .opt {
+    width: 50px;
+    font-size: 11px;
+  }
+}
+.expertise nav.sub-nav .opt {
+  font-size: 12.8px;
+  font-weight: bold;
+  display: inline-block;
+  height: 32px;
+  width: 180px;
+  margin: 8px 0;
+  padding: 6.4px 0;
+  text-decoration: none;
+}
+.expertise nav.sub-nav .opt a {
+  color: #525252;
+  text-decoration: none;
+}
+.expertise nav.sub-nav .b-active:after {
+  margin: 17.6px 0 0 -44px !important;
+}
+.expertise nav.sub-nav .c-active:after {
+  margin: 17.6px 0 0 -68px !important;
+}
+.expertise nav.sub-nav .d-active:after {
+  margin: 17.6px 0 0 -32px !important;
+}
+.expertise nav.sub-nav .active {
+  text-decoration: none;
+}
+.expertise nav.sub-nav .active a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.expertise nav.sub-nav .active span {
+  border-bottom: 3.2px solid #F28B02;
+  padding-bottom: 3.2px;
+}
+.expertise .sub-nav-scrolled {
+  position: fixed;
+  max-width: 944px;
+  width: 100%;
+  top: 60.8px;
+}
+@media only screen and (max-width: 1239px) {
+  .expertise .sub-nav-scrolled {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 759px) {
+  .expertise .sub-nav-scrolled {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .expertise .sub-nav-scrolled .opt {
+    width: 50px;
+  }
+}
+.expertise .grey-section {
+  background-color: #85857d;
+  color: white;
+  padding: 44px 15px;
+  text-align: center;
+}
+.expertise .grey-section .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.expertise .grey-section .sub-title {
+  font-size: 16px;
+}
+.expertise .orange-section {
+  background-color: #f28b00;
+  font-size: 16px;
+  text-align: center;
+  padding: 24px 12px;
+}
+.expertise .orange-section a {
+  color: white;
+}
+.expertise .orange-section a:hover {
+  text-decoration: none;
+}
+.expertise .orange {
+  background-color: #f28b00;
+}
+.expertise .orange .brand-title {
+  margin: 20px 0;
+}
+.expertise .content-box {
+  /*padding: 70px 40px;*/
+  padding: 19.2px 40px;
+}
+.expertise .content-box .title {
+  font-size: 27.2px;
+  font-weight: bold;
+  color: #767676;
+  margin: 0 0 10px 0;
+}
+.expertise .content-box .text p {
+  font-size: 16px;
+  color: #767676;
+}
+.expertise .content-box img {
+  padding: 8px;
+  width: auto;
+}
+@media only screen and (max-width: 1239px) {
+  .expertise .content-box img {
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 759px) {
+  .expertise .content-box img {
+    height: 120px;
+  }
+}
+.expertise .grey {
+  background-color: #dddddd;
+  width: 100%;
+  min-height: 32px;
+  text-align: center;
+  padding: 12px 0;
+}
+.expertise .page-section-1 .text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #767676;
+  text-align: center;
+  padding: 19.2px 12px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.expertise #branding.sub-nav-clicked, .expertise #communications.sub-nav-clicked, .expertise #digital.sub-nav-clicked {
+  padding-top: 104px;
+  margin-top: -104px;
+}
+.expertise #branding.main-nav-clicked, .expertise #communications.main-nav-clicked, .expertise #digital.main-nav-clicked {
+  padding-top: 152px;
+  margin-top: -152px;
+}
+@media only screen and (max-width: 1239px) {
+  .expertise .page-section-1 .text {
+    font-size: 25px;
+    color: #767676;
+    text-align: center;
+    padding: 60px 15px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 759px) {
+  .expertise .page-section-1 .text {
+    font-size: 20px;
+    color: #767676;
+    text-align: center;
+    padding: 30px 15px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .expertise .content-box {
+    padding: 30px 0;
+  }
+}
+.expertise .title-component-branding {
+  background-image: url(/images/expertise/branding_header_resize.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 212px;
+  padding: 60px 88px;
+}
+.expertise .title-component-branding .title {
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.expertise .title-component-branding .sub-title {
+  font-size: 16.8px;
+  color: white;
+  margin: 0;
+  padding: 5px 0 0 4px;
+}
+.expertise .title-component-communications {
+  background-image: url(/images/expertise/comms_header_resize.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 212px;
+  padding: 60px 88px;
+}
+.expertise .title-component-communications .title {
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.expertise .title-component-communications .sub-title {
+  font-size: 16.8px;
+  color: white;
+  margin: 0;
+  padding: 5px 0 0 4px;
+}
+.expertise .title-component-digital {
+  background-image: url(/images/expertise/digital_header_resize.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 212px;
+  padding: 60px 88px;
+}
+.expertise .title-component-digital .title {
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.expertise .title-component-digital .sub-title {
+  font-size: 16.8px;
+  color: white;
+  margin: 0;
+  padding: 5px 0 0 4px;
+}
+@media only screen and (max-width: 1239px) {
+  .expertise .title-component-branding {
+    background-image: url(/images/expertise/branding_header_resize.jpg);
+    background-size: cover;
+    background-position-x: -350px;
+    min-height: 265px;
+    padding: 75px 50px;
+  }
+  .expertise .title-component-branding .title {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-branding .sub-title {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 5px 0 0 4px;
+  }
+  .expertise .title-component-communications {
+    background-image: url(/images/expertise/comms_header_resize.jpg);
+    background-size: cover;
+    background-position-x: -350px;
+    min-height: 265px;
+    padding: 75px 50px;
+  }
+  .expertise .title-component-communications .title {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-communications .sub-title {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 5px 0 0 4px;
+  }
+  .expertise .title-component-digital {
+    background-image: url(/images/expertise/digital_header_resize.jpg);
+    background-size: cover;
+    background-position-x: -350px;
+    min-height: 265px;
+    padding: 75px 50px;
+  }
+  .expertise .title-component-digital .title {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-digital .sub-title {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 5px 0 0 4px;
+  }
+}
+.expertise #contact {
+  margin-top: 20px;
+  padding: 15px;
+}
+.expertise #contact .btn {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  color: #f28b00;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 2px;
+}
+.expertise #contact .btn:hover {
+  color: #fff;
+  background-color: #f28b00;
+  border: 1px solid #fff;
+}
+.expertise #contact #contactUsModal h2 {
+  color: #525252;
+}
+.expertise #contact #contactUsModal label {
+  font-size: 14px;
+}
+.expertise #contact #contactUsModal #contactClose, .expertise #contact #contactUsModal #contactSave {
+  color: #fff;
+}
+.expertise #contact #contactUsModal #contactSave {
+  background-color: #f28b00;
+}
+.expertise #contact #contactUsModal #contactSave:hover {
+  background-color: #fff;
+  color: #f28b00;
+  border: 1px solid #f28b00;
+}
+.expertise #contact #contactUsModal #contactClose {
+  float: left;
+  background-color: #515151;
+}
+.expertise #contact #contactUsModal #contactClose:hover {
+  background-color: #fff;
+  color: #66665d;
+  border: 1px solid #66665d;
+}
+.expertise #contact #contactUsModal textarea {
+  height: 100px;
+  resize: none;
+}
+.expertise #contact #contactUsModal .modal-header {
+  border-bottom: none;
+}
+.expertise #contact #contactUsModal .modal-footer {
+  border-top: none;
+}
+@media only screen and (max-width: 759px) {
+  .expertise .title-component-branding {
+    background-image: url(/images/expertise/branding_header_resize.jpg);
+    background-size: cover;
+    min-height: 165px;
+    padding: 75px 15px;
+  }
+  .expertise .title-component-branding .title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-branding .sub-title {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-communications {
+    background-image: url(/images/expertise/comms_header_resize.jpg);
+    background-size: cover;
+    min-height: 165px;
+    padding: 75px 15px;
+  }
+  .expertise .title-component-communications .title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-communications .sub-title {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin: 0;
+  }
+  .expertise .title-component-digital {
+    background-image: url("/images/expertise/digital_header_resize.jpg");
+    background-size: cover;
+    min-height: 165px;
+    padding: 75px 15px;
+  }
+  .expertise .title-component-digital .title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .expertise .title-component-digital .sub-title {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin: 0;
   }
 }
 

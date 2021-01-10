@@ -11,16 +11,14 @@
     .about,
     .expertise,
     .contact {
-
-//        .main {
-//            width: mixin.m-get-key($layout, main);
-//        }
         
         .container {
             width: mixin.m-get-key($layout, main);
         }
 
-        .mainWrapper {
+        main {
+            display: flex;
+            flex-flow: column;
             width: mixin.m-get-key($layout, mainWrapper);
 
             .blocksContent,

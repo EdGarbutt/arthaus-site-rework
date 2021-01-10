@@ -1,7 +1,7 @@
 @use '../abstracts' as abstract;
 @use '../mixins'as mixin;
 
-main {
+.home {
     .homepage-grid {
         display: grid;
         

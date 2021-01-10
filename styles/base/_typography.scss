@@ -15,6 +15,123 @@ body {
     color: #525252;
 }
 
+.home,
+.work,
+.about,
+.expertise,
+.contact {
+
+    main {
+
+        .content {
+            color: mixin.m-get-key(abstract.$s-colours, white);
+
+            h1 {
+                font-size: 1.5em;
+                color: #525252;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                /*color: #525252;*/
+
+                &.caps {
+                    font-size: 1.3em;
+                    text-transform: uppercase;
+                }
+            }
+
+            p {
+                font-size: 1.1em;
+                color: #525252;
+            }
+
+            .plusIcon {
+                font-size: 3em;
+            }
+            // Generate CSS Rules for tabvar view and above
+            @include mixin.m-respond-to(medium, abstract.$s-breakpoints) {
+                padding: 0.8*20px;
+
+                h1 {
+                    font-size: 0.8*2.2em;
+                }
+
+                h2 {
+                    font-size: 0.8*22px;
+
+                    &.caps {
+                        font-size: 0.8*1.3em;
+                        text-transform: uppercase;
+                    }
+                }
+
+                p {
+                    font-size: 0.8*1.6em;
+                }
+
+                .plusIcon {
+                    font-size: 0.8*5em;
+                    margin-bottom: -0.8*3px;
+                }
+            }
+        }
+    }
+}
+
+.project {
+
+    main {
+
+        .content {
+            color: mixin.m-get-key(abstract.$s-colours, black);
+
+            p {
+                /*font-size: 2.4em;*/
+                font-size: 0.8*3.2em;
+            }
+
+            &.projectNavigation {
+                color: mixin.m-get-key(abstract.$s-colours, dark-grey);
+                font-size: 0.8*3.5em;
+            }
+        }
+    }
+}
+
+.contact,
+.about,
+.expertise {
+
+    .mainWrapper {
+
+        .content {
+            color: mixin.m-get-key(abstract.$s-colours, black);
+
+            .arthaus-address {
+                font-size: 0.8*1.6em;
+            }
+
+            .color-teal {
+                color: mixin.m-get-key(abstract.$s-colours, teal);
+            }
+
+            .arthaus-social {
+
+                ul {
+
+                    li {
+                        a {
+                            color: mixin.m-get-key(abstract.$s-colours, teal);
+                            font-size: 0.8*3.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 header {
     /* Navigation text */
     nav {
@@ -107,5 +224,41 @@ footer {
                 }
             }
         }
+    }
+}
+
+.masthead {
+    color: mixin.m-get-key(abstract.$s-colours, white);
+
+    h1 {
+        font-family: "LatoWebBlack";
+        font-size: 4em;
+
+        @include mixin.m-respond-to(medium, abstract.$s-breakpoints) {
+            font-size: 8em;
+        }
+
+        @include mixin.m-respond-to(large, abstract.$s-breakpoints) {
+            font-size: 0.8*12em;
+        }
+
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        font-family: "LatoWeb";
+        font-size: 1.2em;
+
+        @include mixin.m-respond-to(medium, abstract.$s-breakpoints) {
+            font-size: 2em;
+        }
+
+        @include mixin.m-respond-to(large, abstract.$s-breakpoints) {
+            font-size: 0.8*2.7em;
+        }
+
+        margin: 0;
+        padding: 0;
     }
 }
