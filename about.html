@@ -27,13 +27,35 @@
                         </a>
                     </div>
                     <div class="desktop-menu">
-                        <a href="about.html">About</a>
+                        <a class="active" href="about.html">About</a>
                     </div>
                     <div class="desktop-menu">
                         <a href="expertise.html">Expertise</a>
                     </div>
                     <div class="desktop-menu">
-                        <a href="work.html">Work</a>
+                        <a href="work/index.html">Work</a>
+                    </div>
+                    <div class="desktop-menu">
+                        <a id="desktop-insights" href="/insights/index.html" rel="noopener noreferrer">Insights</a>
+                        <ul class="insights-list">
+                            <li class="insights-list__item" data-postType="blogPost">
+                                <a href="insights/index.html?postType=blogPost">
+                                    <img class="insights-item__icon" src="images/insights/icon_blog.png" />BLOG</a>
+                            </li>
+                            <li class="insights-list__item" data-postType="inspiration">
+                                <a href="insights/index.html?postType=inspiration">
+                                    <img style="position: relative; left: -3px" class="insights-item__icon"
+                                        src="images/insights/icon_inspiration.png" />INSPIRATION</a>
+                            </li>
+                            <li class="insights-list__item" data-postType="socialPost">
+                                <a href="insights/index.html?postType=socialPost">
+                                    <img class="insights-item__icon" src="images/insights/icon_socials.png" />SOCIAL</a>
+                            </li>
+                            <li class="insights-list__item" data-postType="allPost">
+                                <a href="insights/index.html?postType=all">
+                                    <img class="insights-item__icon" src="images/insights/icon_all.png" />ALL</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="desktop-menu">
                         <a href="contact.html">Contact</a>
@@ -49,13 +71,35 @@
                 <div class="menu-items">
                     <ul>
                         <li>
-                            <a href="about.html">About</a>
+                            <a class="active" href="about.html">About</a>
                         </li>
                         <li>
                             <a href="expertise.html">Expertise</a>
                         </li>
                         <li>
-                            <a href="work.html">Work</a>
+                            <a href="work/index.html">Work</a>
+                        </li>
+                        <li>
+                            <a id="mobile-insights" href="/insights/index.html" rel="noopener noreferrer">Insights</a>
+                            <ul class="mobile__insights-list">
+                                <li class="mobile__insights-item" data-postType="blogPost">
+                                    <img class="insights-item__icon" src="images/insights/icon_blog.png" /><a
+                                        href="insights/index.html?postType=blogPost">BLOG</a>
+                                </li>
+                                <li class="mobile__insights-item" data-postType="inspiration">
+                                    <img style="position: relative; left: -3px" class="insights-item__icon"
+                                        src="images/insights/icon_inspiration.png" /><a
+                                        href="insights/index.html?postType=inspiration">INSPIRATION</a>
+                                </li>
+                                <li class="mobile__insights-item" data-postType="socialPost">
+                                    <img class="insights-item__icon" src="images/insights/icon_socials.png" /><a
+                                        href="insights/index.html?postType=socialPost">SOCIAL</a>
+                                </li>
+                                <li class="mobile__insights-item" data-postType="allPost">
+                                    <img class="insights-item__icon" src="images/insights/icon_all.png" /><a
+                                        href="insights/index.html?postType=all">ALL</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="contact.html">Contact</a>
@@ -69,211 +113,205 @@
                 <div class="blockMainRow">
                     <div class="blockCol">
                         <div class="blockRow">
-                            <div class="block type-h orange">
+                            <div class="block type-h height-auto">
 
-                                <div class="masthead">
-                                    <h1>About us</h1>
+                                <h1 class="text-center page-title__wrap">
+                                    <span class="heading1 underline padding-b--18">About us</span>
+                                </h1>
+                                <div class="bkg--white">
+                                    <nav class="sub-nav">
+                                        <div class="opt active">
+                                            <a class="scroll" href="#facts"
+                                                rel="noopener noreferrer"><span>FACTS</span></a>
+                                        </div>
+                                        <div class="opt">
+                                            <a class="scroll" href="#people"
+                                                rel="noopener noreferrer"><span>PEOPLE</span></a>
+                                        </div>
+                                        <div class="opt">
+                                            <a class="scroll" href="#clients"
+                                                rel="noopener noreferrer"><span>CLIENTS</span></a>
+                                        </div>
+                                    </nav>
                                 </div>
 
-                                <nav class="sub-nav">
-                                    <div class="opt"><a class="scroll" href="#facts"><span>FACTS</span></a></div>
-                                    <div class="opt"><a class="scroll" href="#people"><span>PEOPLE</span></a></div>
-                                    <div class="opt"><a class="scroll" href="#clients"><span>CLIENTS</span></a>
-                                    </div>
-                                </nav>
-
-                                <section>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-12 white">
-                                            <h2 class="brand-title title strong">Brand development and brand
-                                                communications</h2>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section id="specialisms" class="specialisms">
+                                <section id="specialisms" class="specialisms animated padding-b--30 padding-t--30">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-xs-12 col-md-12 dark-grey">
-                                                <!--<img class="arrow" src="/images/about/triangles/triangle-white.png" />-->
+                                            <div class="col-xs-12 col-md-12 padding--none">
                                                 <div class="row">
-                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
-                                                        <h2 class="title strong">Specialisms</h2>
+                                                    <div class="col-md-6">
+                                                        <h2
+                                                            class="heading2 strong text-left heading2--burgundy padding-b--18">
+                                                            Brand development <br />
+                                                            & communications
+                                                        </h2>
+
+                                                        <p class="bodyText padding-b--10">
+                                                            Arthaus is a multi discipline design agency,
+                                                            based in the Old Brewery, Henley.
+                                                        </p>
+                                                        <p class="bodyText">
+                                                            Our unique mix of design communications
+                                                            expertise and leading edge technology
+                                                            capability, enables us to deliver great user
+                                                            experiences and tangible business benefits
+                                                            through both traditional and digital mediums.
+                                                        </p>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                                                        <img class="icon" src="images/about/icons/ee-icon.png" />
-                                                        <h4 class="icon-text strong">Employee<br />engagement</h4>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                                                        <img class="icon" src="images/about/icons/mc-icon.png" />
-                                                        <h4 class="icon-text strong">Marketing<br />communications
-                                                        </h4>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                                                        <img class="icon" src="images/about/icons/tm-icon.png" />
-                                                        <h4 class="icon-text strong">Talent<br />management</h4>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                                                        <img class="icon" src="images/about/icons/eb-icon.png" />
-                                                        <h4 class="icon-text strong">Employer<br />branding</h4>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                                                        <img class="icon" src="images/about/icons/ic-icon.png" />
-                                                        <h4 class="icon-text strong">Internal<br />communications
-                                                        </h4>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                                                        <img class="icon" src="images/about/icons/ed-icon.png" />
-                                                        <h4 class="icon-text strong">Employee<br />development</h4>
+                                                    <div
+                                                        class="col-md-6 display-flex flex-wrap justify-end padding-l--none spec-list">
+                                                        <div class="spec-wrap padding-l--5 padding-r--5">
+                                                            <div
+                                                                class="display-flex direction-col align-center border border--burgundy padding-b--25 padding-t--25">
+                                                                <figure class="spec-icon">
+                                                                    <img src="images/about/icons/ee-icon.png"
+                                                                        alt="icon represent employee engagement aspect" />
+                                                                </figure>
+
+                                                                <p
+                                                                    class="strong smallText2 smallText2--burgundy text-center">
+                                                                    Employee<br />engagement
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="spec-wrap padding-l--5 padding-r--5">
+                                                            <div
+                                                                class="display-flex direction-col align-center border border--darkBlue padding-b--25 padding-t--25">
+                                                                <figure class="spec-icon">
+                                                                    <img src="images/about/icons/mc-icon.png"
+                                                                        alt="icon represent marketing communications aspect" />
+                                                                </figure>
+
+                                                                <p
+                                                                    class="strong smallText2 smallText2--darkBlue text-center">
+                                                                    Marketing<br />communications
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="spec-wrap padding-l--5 padding-r--5">
+                                                            <div
+                                                                class="display-flex direction-col align-center border border--green padding-b--25 padding-t--25">
+                                                                <figure class="spec-icon">
+                                                                    <img src="images/about/icons/tm-icon.png"
+                                                                        alt="icon represent talent management aspect" />
+                                                                </figure>
+
+                                                                <p
+                                                                    class="strong smallText2 smallText2--green text-center">
+                                                                    Talent<br />management
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="spec-wrap padding-l--5 padding-r--5">
+                                                            <div
+                                                                class="display-flex direction-col align-center border border--mainOrange padding-b--25 padding-t--25">
+                                                                <figure class="spec-icon">
+                                                                    <img src="images/about/icons/eb-icon.png"
+                                                                        alt="icon represent employer branding aspect" />
+                                                                </figure>
+
+                                                                <p
+                                                                    class="strong smallText2 smallText2--mainOrange text-center">
+                                                                    Employer<br />branding
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="spec-wrap padding-l--5 padding-r--5">
+                                                            <div
+                                                                class="display-flex direction-col align-center border border--teal padding-b--25 padding-t--25">
+                                                                <figure class="spec-icon">
+                                                                    <img src="images/about/icons/ic-icon.png"
+                                                                        alt="icon represent internal communications aspect" />
+                                                                </figure>
+
+                                                                <p
+                                                                    class="strong smallText2 smallText2--teal text-center">
+                                                                    Internal<br />communications
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="spec-wrap padding-l--5 padding-r--5">
+                                                            <div
+                                                                class="display-flex direction-col align-center border border--navy padding-b--25 padding-t--25">
+                                                                <figure class="spec-icon">
+                                                                    <img src="images/about/icons/ed-icon.png"
+                                                                        alt="icon represent employee development aspect" />
+                                                                </figure>
+
+                                                                <p
+                                                                    class="strong smallText2 smallText2--navy text-center">
+                                                                    Employee<br />development
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                <section id="facts" class="facts">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-md-12 white">
-                                                <h2 class="title strong">A few facts</h2>
-                                                <p>Arthaus is a multi discipline design agency, based in the Old
-                                                    Brewery, Henley.</p>
-                                                <p>Our unique mix of design communications expertise and leading
-                                                    edge technology capability, enables us to deliver great user
-                                                    experiences and tangible business benefits through both
-                                                    traditional and digital mediums.</p>
-                                                <div class="row" id='counter'>
-                                                    <div class="col-xs-12 col-sm-6 col-md-3 col-xl-2">
-                                                        <div class="box-element">
-                                                            <p class="top">IN BUSINESS FOR</p>
-                                                            <p class="orange">
+
+                                <section id="facts" class="facts animated wow fadeIn padding-b--30 padding-t--30"
+                                    data-wow-duration="1s">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-12 text-center">
+                                            <div class="container-fluid b" style="max-width: 944px; margin: 0 auto">
+                                                <p style="" class="subHead text-center padding-b--30">
+                                                    A FEW FACTS ABOUT US
+                                                </p>
+
+                                                <div class="display-flex" id="counter">
+                                                    <div class="padding--none counter-wrap">
+                                                        <div class="counter-item text-center wow fadeIn"
+                                                            data-wow-duration="1s">
+                                                            <p class="smallText1 top">IN BUSINESS FOR</p>
+                                                            <p class="subHead text--burgundy">
                                                                 <span class="count-value" data-count="25">0</span>
                                                             </p>
-                                                            <p class="bottom">YEARS</p>>
+                                                            <p class="smallText1 bottom">YEARS</p>
+                                                            >
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-3 col-xl-2">
-                                                        <div class="box-element">
-                                                            <p class="top">WE ARE</p>
-                                                            <p class="orange">
+                                                    <div class="padding--none counter-wrap">
+                                                        <div class="counter-item text-center wow fadeIn"
+                                                            data-wow-duration="1s">
+                                                            <p class="smallText1 top">WE ARE</p>
+                                                            <p class="subHead text--darkBlue"
+                                                                style="line-height: 1; padding-top: 5px">
                                                                 <span class="count-value" data-count="100">0</span><span
                                                                     class="count-value">%</span>
                                                             </p>
-                                                            <p class="bottom">PRIVATELY<br />OWNED</p>
+                                                            <p class="smallText1 bottom">
+                                                                PRIVATELY<br />OWNED
+                                                            </p>
                                                         </div>
                                                     </div>
-
-                                                    <div class="col-xs-12 col-sm-6 col-md-3 col-xl-2">
-                                                        <div class="box-element">
-                                                            <p class="top">WE‘VE CREATED</p>
-                                                            <p class="orange">
+                                                    <div class="padding--none counter-wrap">
+                                                        <div class="counter-item text-center wow fadeIn"
+                                                            data-wow-duration="1s">
+                                                            <p class="smallText1 top">WE‘VE CREATED</p>
+                                                            <p class="subHead text--green"
+                                                                style="line-height: 1; padding-top: 5px">
                                                                 <span class="count-value" data-count="14">0</span>
                                                             </p>
-                                                            <p class="bottom">THOUSAND<br />JOB TICKETS</p>
+                                                            <p class="smallText1 bottom">
+                                                                THOUSAND<br />JOB TICKETS
+                                                            </p>
                                                         </div>
                                                     </div>
-
-                                                    <div class="col-xs-12 col-sm-6 col-md-3 col-xl-2">
-                                                        <div class="box-element">
-                                                            <p class="top">WE HAVE OVER</p>
-                                                            <p class="orange">
+                                                    <div class="padding--none counter-wrap">
+                                                        <div class="counter-item text-center wow fadeIn"
+                                                            data-wow-duration="1s">
+                                                            <p class="smallText1 top">WE HAVE OVER</p>
+                                                            <p class="subHead text--mainOrange"
+                                                                style="line-height: 1; padding-top: 5px">
                                                                 <span class="count-value" data-count="180">0</span>
                                                             </p>
-                                                            <p class="bottom">YEARS OF<br />EXPERIENCE</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section>
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-md-12 orange">
-                                                <h2 class="strong">We champion the user experience</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section id="people" class="">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-md-12 white">
-                                                <div class="row">
-                                                    <h2 class="title strong">People</h2>
-                                                    <p style="max-width:350px;">A diverse team of creative designers and
-                                                        developers headed
-                                                        up by a very experienced group of directors.</p>
-                                                </div>
-                                                <div class="row arthaus-person__wrap">
-                                                    <div class="col-sm-4 arthaus-person">
-
-                                                        <div class="image-container">
-                                                            <div class="imageBox">
-                                                                <img class="bg-image"
-                                                                    src="images/about/staff/Mark L.png" alt="" />
-                                                                <div class="textBox">
-                                                                    <div class="title">Mark Luckett</div><br />
-                                                                    <div class="subTitle">Managing Director</div>
-                                                                    <div class="text">Founder, with over 30 years
-                                                                        experience in both the 'business to
-                                                                        business' &amp; 'business to employee'
-                                                                        sectors, he is passionate about helping
-                                                                        clients deliver innovative design solutions
-                                                                        to their complex marketing &amp;
-                                                                        communications challenges.<br />A key
-                                                                        strength is his ability to blend design
-                                                                        &amp; technology to deliver great user
-                                                                        centric solutions &amp; experiences.</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-sm-4 arthaus-person">
-
-                                                        <div class="image-container">
-                                                            <div class="imageBox">
-                                                                <img class="bg-image"
-                                                                    src="images/about/staff/Mark B.png" alt="" />
-                                                                <div class="textBox">
-                                                                    <div class="title">Mark Bowerman</div><br />
-                                                                    <div class="subTitle">Director</div>
-                                                                    <div class="text">Mark joined Arthaus in its
-                                                                        infancy and has been a big part of the
-                                                                        company’s growth & development. Always keen
-                                                                        to engage with the client to understand
-                                                                        their requirements and those of their target
-                                                                        audience. Mark is a project leader for
-                                                                        digital media projects as well as heading up
-                                                                        new business generation.</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-sm-4 arthaus-person">
-
-                                                        <div class="image-container">
-                                                            <div class="imageBox">
-                                                                <img class="bg-image" src="images/about/staff/Becky.png"
-                                                                    alt="" />
-                                                                <div class="textBox">
-                                                                    <div class="title">Becky Carter</div><br />
-                                                                    <div class="subTitle">Creative Director</div>
-                                                                    <div class="text">Becky began her career as a
-                                                                        designer in Fleet Street &amp; after seven
-                                                                        successful years working in London she
-                                                                        joined <i>Arthaus</i> where now she enjoys
-                                                                        her role as Creative Director. With her
-                                                                        wealth of experience &amp; hands on
-                                                                        approach, Becky oversees our talented
-                                                                        creative team in all aspects of branding,
-                                                                        design &amp; communications.</div>
-                                                                </div>
-                                                            </div>
+                                                            <p class="smallText1 bottom">
+                                                                YEARS OF<br />EXPERIENCE
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -282,197 +320,314 @@
                                     </div>
                                 </section>
 
-                                <section id="clients" class="animated">
-                                    <div class="container-fluid">
-                                        <div class="row white">
-                                            <h2 class="title strong">Clients</h2>
-                                            <p style="padding-bottom:0">Some of the great businesses we work with.</p>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo1" class="client-logo"
-                                                    src="images/about/clients/diageo_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo2" class="client-logo"
-                                                    src="images/about/clients/waves_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo3" class="client-logo"
-                                                    src="images/about/clients/itv_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo4" class="client-logo"
-                                                    src="images/about/clients/tesco_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo5" class="client-logo"
-                                                    src="images/about/clients/ssy_logo.png" />
+                                <section id="people" class="animated padding-b--30 padding-t--30">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-12">
+                                            <div class="row">
+                                                <h2 class="heading2 heading2--green strong text-center padding-b--18">
+                                                    Our people
+                                                </h2>
+
+                                                <p class="bodyText text-center" style="margin: 0 auto">
+                                                    A diverse team of creative designers and
+                                                    developers headed up by a very experienced group
+                                                    of directors.
+                                                </p>
                                             </div>
 
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo6" class="client-logo"
-                                                    src="images/about/clients/agnovos_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo7" class="client-logo"
-                                                    src="images/about/clients/tui_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo8" class="client-logo"
-                                                    src="images/about/clients/lloyds_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo9" class="client-logo"
-                                                    src="images/about/clients/worldpay_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo10" class="client-logo"
-                                                    src="images/about/clients/hsbc_logo.png" />
-                                            </div>
-
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo11" class="client-logo"
-                                                    src="images/about/clients/cocacola_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo12" class="client-logo"
-                                                    src="images/about/clients/otsuka_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo13" class="client-logo"
-                                                    src="images/about/clients/M&S_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo14" class="client-logo"
-                                                    src="images/about/clients/dixons_logo.png" />
-                                            </div>
-                                            <div class="col-md-15 col-xs-6">
-                                                <img id="client-logo15" class="client-logo"
-                                                    src="images/about/clients/bupa_logo.png" />
-                                            </div>
+                                            <div id="staff-list" class="row padding-l--15 padding-r--15"></div>
                                         </div>
                                     </div>
                                 </section>
 
-
-                                <section id="testimonials">
-                                    <div class="container-fluid">
-                                        <div class="'row">
-                                            <div class="col-xs-12 col-md-12 orange">
-                                                <h2 class="strong">Quality assurance</h2>
-                                                <div style="" class="quality-assurance-container">
-
-                                                    <img class="BSI-logo" src='images/about/BSI logo.png' />
-
-
-                                                    <p class="quality-assurance padding-t--18">Arthaus are one of few
-                                                        design agencies
-                                                        with a defined quality management system and have been
-                                                        independently assessed by BSI against internationally recognised
-                                                        standards endorsing our commitment to quality and assurance.
-                                                    </p>
-                                                    <p class="quality-assurance quality-assurance-number padding-t--10"
-                                                        style="font-size:12px;">ISO 9001 Quality Management certified by
-                                                        BSI, FS707737 </p>
-
-                                                </div>
-
-
-
-
-
-                                            </div>
-                                        </div>
+                                <section id="testimonials" class="animated padding-b--30 padding-t--30">
+                                    <div class="container-fluid padding--none">
                                         <div class="row">
                                             <div class="col-xs-12 col-md-12 white last">
                                                 <div class="testimonial">
-                                                    <h2 class="title strong">We build relationships</h2>
-                                                    <p class="quote" style="font-size:14px;">
-                                                        “Today, we launched the Brand Experience Centre
-                                                        site <span class="line-break">and</span>
-                                                        we couldn’t be happier with the result. Thank you
-                                                        so much for <span class="line-break">your</span>
-                                                        guidance and hard work. In short, it’s afantastic piece of
-                                                        <span class="line-break"> work!</span> We feel so proud of it
-                                                        and hope you do too.”
-                                                    </p>
-
-
-
-                                                    <p class="name" style="margin:0 auto;font-size:14px;">JOANNA
-                                                        SINGLETON - Global Employee Engagement |
-                                                        Diageo</p>
+                                                    <h2 class="heading2 heading2--darkBlue strong padding-b--30">
+                                                        We build relationships
+                                                    </h2>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div id="testimonial-list" class="">
+                                            <ul class="padding--none display-flex flex-wrap justify-spaceBetween">
+                                                <li class="testimonial-card padding-b--18">
+                                                    <div
+                                                        class="bodyText bkg--whiteGrey padding-l--20 padding-r--20 padding-b--20 padding-t--20 testimonial-text">
+                                                        I just want to say a massive thank you for all
+                                                        your efforts at helping us reach our deadline –
+                                                        despite our last-minute changes. You’ve been a
+                                                        delight to work with, and very supportive.<br />
+                                                        Thanks once again.
+                                                    </div>
+                                                    <div>
+                                                        <div class="testimonial-logo" style="
+                                                  background-image: url('/images/about/clients/icons/Logos_Diageo.png');
+                                                "></div>
+
+                                                        <p class="smallText2 text--lightGrey text-center">
+                                                            Sally Brookes
+                                                        </p>
+                                                        <p class="smallText2 text--darkBlue text-center">
+                                                            Communications Manager | DIAGEO
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="testimonial-card padding-b--18">
+                                                    <div
+                                                        class="bodyText bkg--whiteGrey padding-l--20 padding-r--20 padding-b--20 padding-t--20 testimonial-text">
+                                                        I wanted to drop a note to say a very big thank
+                                                        you for all your support, it was a long and
+                                                        quite challenging project but we’ve now reached
+                                                        the finish line.<br />
+                                                        You’ve gone above and beyond to make sure we
+                                                        reach the deadline, so a very big thank you for
+                                                        that as well.
+                                                    </div>
+                                                    <div>
+                                                        <div class="testimonial-logo" style="
+                                                  background-image: url('/images/about/clients/icons/Logos_Otsuka.png');
+                                                "></div>
+
+                                                        <p class="smallText2 text--lightGrey text-center">
+                                                            Kajitha Umesh
+                                                        </p>
+                                                        <p class="smallText2 text--darkBlue text-center">
+                                                            Enterprise Applications Manager | Otsuka
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="testimonial-card padding-b--18">
+                                                    <div
+                                                        class="bodyText bkg--whiteGrey padding-l--20 padding-r--20 padding-b--20 padding-t--20 testimonial-text">
+                                                        Thanks to you and all the folks at Arthaus that
+                                                        have helped advance our brand over the last
+                                                        year. The impact has been significant.
+                                                    </div>
+                                                    <div>
+                                                        <div class="testimonial-logo" style="
+                                                  background-image: url('/images/about/clients/icons/Logos_HSBC.png');
+                                                "></div>
+
+                                                        <p class="smallText2 text--lightGrey text-center">
+                                                            David Morris
+                                                        </p>
+                                                        <p class="smallText2 text--darkBlue text-center">
+                                                            Global Head of Learning | HSBC
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="clients" class="animated wow fadeIn padding-b--30 padding-t--30"
+                                    data-wow-duration="2s">
+                                    <div class="container-fluid">
+                                        <div class="row white">
+                                            <h2 class="strong heading2 heading2--mainOrange padding-b--18">
+                                                Our clients
+                                            </h2>
+                                            <p style="" class="subHead padding-b--18">
+                                                SOME OF THE GREAT BUSINESSES WE WORK WITH
+                                            </p>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 0.25s" id="client-logo1"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/diageo_logo.png"
+                                                    alt="client business logo - diageo" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 0.5s" id="client-logo2"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/waves_logo.png"
+                                                    alt="client business logo - waves" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 0.75s" id="client-logo3"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/itv_logo.png"
+                                                    alt="client business logo - itv" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 1s" id="client-logo4"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/tesco_logo.png"
+                                                    alt="client business logo - tesco" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 1.25s" id="client-logo5"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/ssy_logo.png"
+                                                    alt="client business logo - simpson spence young" />
+                                            </div>
+
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 1.5s" id="client-logo6"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/agnovos_logo.png"
+                                                    alt="client business logo - agnovos" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 1.75s" id="client-logo7"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/tui_logo.png"
+                                                    alt="client business logo - tui" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 2s" id="client-logo8"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/lloyds_logo.png"
+                                                    alt="client business logo - lloyds register" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 2.25s" id="client-logo9"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/worldpay_logo.png"
+                                                    alt="client business logo - world pay" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 2.5s" id="client-logo10"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/hsbc_logo.png"
+                                                    alt="client business logo - hsbc" />
+                                            </div>
+
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 2.75s" id="client-logo11"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/cocacola_logo.png"
+                                                    alt="client business logo - coca cola" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 3s" id="client-logo12"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/otsuka_logo.png"
+                                                    alt="client business logo - otsuka" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 3.25s" id="client-logo13"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/M&S_logo.png"
+                                                    alt="client business logo - M&S" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 3.5s" id="client-logo14"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/dixons_logo.png"
+                                                    alt="client business logo - dixons carphone" />
+                                            </div>
+                                            <div class="col-md-15 col-xs-6">
+                                                <img style="animation-delay: 3.75s" id="client-logo15"
+                                                    class="client-logo animated wow fadeIn"
+                                                    src="images/about/clients/bupa_logo.png"
+                                                    alt="client business logo - Bupa" />
                                             </div>
                                         </div>
                                     </div>
                                 </section>
 
+                                <section id="quality-assurance" class="animated padding-b--60 padding-t--30">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-12">
+                                            <h2 class="strong heading2 heading2--teal text-center padding-b--18">
+                                                Quality Assurance
+                                            </h2>
+                                            <p class="subHead padding-b--18 text-center">
+                                                ISO 9001 QUALITY MANAGEMENT CERTIFIED BY BSI,
+                                                FS707737
+                                            </p>
+                                            <div class="display-flex align-center flex-wrap">
+                                                <p class="col-md-3 col-xs-12 text-center">
+                                                    <img class="BSI-logo" src="images/about/BSI logo.png"
+                                                        alt="Iso 9001 quality management icon in teal colour" />
+                                                </p>
 
-                                <section id="contact" class="orange">
+                                                <p class="bodyText col-md-9 col-xs-12 text-left">
+                                                    Arthaus are one of only a few design agencies with
+                                                    a defined quality management system and have been
+                                                    independently assessed by BSI against
+                                                    internationally recognised standards endorsing our
+                                                    commitment to quality and assurance.
+                                                </p>
+                                            </div>
+                                            <p class="subHead padding-b--18 text-center">
+                                                CYBER ESSENTIALS CERTIFIED
+                                            </p>
+                                            <div class="display-flex align-center flex-wrap">
+                                                <p class="col-md-3 col-xs-12 text-center">
+                                                    <img class="BSI-logo" src="images/about/Certified.png"
+                                                        alt="Cyber Essentials logo" style="max-width: 74px" />
+                                                </p>
+
+                                                <p class="bodyText col-md-9 col-xs-12 text-left">
+                                                    Continuing our commitment to quality assurance and
+                                                    client security we now have our Cyber Essentials
+                                                    certification to go along with our ISO9001
+                                                    certification. This provides our clients’ with the
+                                                    assurance that we take cyber security and the
+                                                    integrity of their data seriously.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!--============================== New form here ======================-->
+                                <section id="contact-form">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-xs-12 col-md-12 text-center">
-                                                <button type="button" class="btn strong" data-toggle="modal"
-                                                    data-target="#contactUsModal">Contact us</button>
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog"
-                                                    aria-labelledby="contactUsModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal"
-                                                                    aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                                <h2 class="modal-title strong" id="contactUsModalLabel">
-                                                                    Contact Us</h2>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <form class="text-left" method="POST"
-                                                                    action="https://jumprock.co/mail/arthaus">
-                                                                    <div class="form-group">
-                                                                        <label for="recipient-name"
-                                                                            class="col-form-label">Name:</label>
-                                                                        <input type="text" class="form-control"
-                                                                            name="name" id="recipient-name" required>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="recipient-email"
-                                                                            class="col-form-label">Email:</label>
-                                                                        <input type="email" class="form-control"
-                                                                            name="email" id="recipient-email" required>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <div
-                                                                            class="telephone-optional-container clearfix">
-                                                                            <label for="recipient-telephone"
-                                                                                class="col-form-label telephone-label">Telephone:</label>
-                                                                            <label for="recipient-telephone"
-                                                                                class="col-form-label optional-label">Optional</label>
-                                                                        </div>
-
-                                                                        <input type="tel" class="form-control"
-                                                                            name="phone" id="recipient-telephone"
-                                                                            required>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="message-text"
-                                                                            class="col-form-label">How can we
-                                                                            help?</label>
-                                                                        <textarea class="form-control" name="message"
-                                                                            id="message-text"></textarea>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button id="contactClose" type="button"
-                                                                    class="btn strong"
-                                                                    data-dismiss="modal">Cancel</button>
-                                                                <button id="contactSave" type="button"
-                                                                    class="btn strong">Send</button>
+                                            <div
+                                                class="col-xs-12 col-md-12 text-center bkg--whiteGrey padding-b--30 padding-t--30">
+                                                <h2 class="strong heading2 text--midGrey padding-b--18"
+                                                    id="contactUsModalLabel">
+                                                    Get in touch
+                                                </h2>
+                                                <p class="bodyText padding-b--30">
+                                                    Contact us to find out how we can help you.
+                                                </p>
+                                                <div style="max-width: 650px; margin: 0 auto">
+                                                    <form class="text-left" method="POST"
+                                                        action="/contact/contact.aspx/SubmitContactForm">
+                                                        <input type="checkbox" name="_honeypot" style="display: none"
+                                                            tabindex="-1" autocomplete="off" />
+                                                        <input type="hidden" name="_redirect"
+                                                            value="https://arthaus.co.uk/thanks.html" />
+                                                        <div class="form-group col-md-6">
+                                                            <label for="recipient-name" class="col-form-label">Your
+                                                                name:</label>
+                                                            <input type="text" class="form-control" name="name"
+                                                                id="recipient-name" required />
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="recipient-email" class="col-form-label">Your
+                                                                email:</label>
+                                                            <input type="email" class="form-control" name="email"
+                                                                id="recipient-email" required />
+                                                        </div>
+                                                        <div class="form-group col-md-9">
+                                                            <label for="message-text"
+                                                                class="col-form-label col-form-label-lg">
+                                                                Your message
+                                                            </label>
+                                                            <textarea class="form-control" name="message"
+                                                                id="message-text"></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <div class="g-recaptcha"
+                                                                data-sitekey="6LdoKucUAAAAAPfEAJG2r0NnwY_xjvhRk2_x7CZc">
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="form-group col-md-3 form-group--sendMsg-btn">
+                                                            <button id="contactSave" type="submit"
+                                                                class="btn bkg--mainOrange smallText1 smallText1--white btn--fullWidth btn--sendMsg">
+                                                                Send message
+                                                            </button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -485,55 +640,77 @@
                 </div>
             </div>
         </main>
-        <footer class="dark-grey with-borderTop">
+        <footer class="bkg--darkGrey with-borderTop">
             <div class="leftFooter">
                 <div class="arthaus-icon"></div>
                 <div class="arthaus-address">
                     <p>ARTHAUS</p>
-                    <p>24/26 Old Brewery Lane</p>
-                    <p>New Street, Henley on Thames,</p>
+                    <p>24 Old Brewery Lane</p>
+                    <p>New Street, Henley on Thames</p>
                     <p>Oxon, RG9 2DE</p>
+                    <p>
+                        T:
+                        <a href="tel:+441628487333">+44 (0)1628 487 333</a>
+                    </p>
+                    <p>
+                        E:
+                        <a href="mailto:think@arthaus.co.uk">think@arthaus.co.uk</a>
+                    </p>
+                    <p class="copy-right">
+                        &#169; Arthaus
+                        <span class="cDate">2021</span>
+                    </p>
                 </div>
             </div>
+
             <div class="rightFooter">
                 <div class="arthaus-social">
                     <ul>
                         <li>
                             <a href="https://www.instagram.com/arthaus_design/" target="_blank"
                                 rel="noopener noreferrer">
-                                <img class="footer-social-icon instagram-icon" src="images/footer/Instagram.png"
-                                    alt="Social media icon, instagram icon in grey links to company's instagram account">
+                                <img class="footer-social-icon" src="images/footer/dec2020/instagram.png"
+                                    alt="Social media icon, instagram icon in grey links to company's instagram account" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/company/arthaus-visual-communications-"
                                 rel="noopener noreferrer" target="_blank">
-                                <img class="footer-social-icon linkedin-icon" src="images/footer/linkedin.png"
-                                    alt="Social media icon, linkedin icon in grey links to company's linkedin account">
+                                <img class="footer-social-icon" src="images/footer/dec2020/linkedin.png"
+                                    alt="Social media icon, linkedin icon in grey links to company's linkedin account" />
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com/arthaus" target="_blank" rel="noopener noreferrer">
-                                <img class="footer-social-icon twitter-icon" src="images/footer/twitter.png"
-                                    alt="Social media icon, twitter icon in grey links to company's twitter account">
+                                <img class="footer-social-icon" src="images/footer/dec2020/twitter.png"
+                                    alt="Social media icon, twitter icon in grey links to company's twitter account" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/ArtHaus.design/" rel="noopener noreferrer"
                                 target="_blank">
-                                <img class="footer-social-icon facebook-icon" src="images/footer/facebook.png"
-                                    alt="Social media icon, facebook icon in grey links to company's facebook account">
+                                <img class="footer-social-icon" src="images/footer/dec2020/facebook.png"
+                                    alt="Social media icon, facebook icon in grey links to company's facebook account" />
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="arthaus-terms">
-                    <a href="/privacy-terms-conditions.html" rel="noopener noreferrer">
-                        <p>Privacy, terms &amp; conditions</p>
-                    </a>
+                    <p style="width: 100%">
+                        <a href="/documents/Privacy Policy.pdf" rel="noopener noreferrer" target="_blank">Privacy</a>
+                        &#8194; | &#8194;
+                        <a href="/privacy-terms-conditions.html" rel="noopener noreferrer" target="_blank">Terms &amp;
+                            Conditions
+                        </a>
+                    </p>
                 </div>
-                <div class="arthaus-copyright">
-                    <p>© Copyright Arthaus <span class="cDate">2020</span></p>
+                <div class="arthaus-certifications">
+                    <figure class="footer-logo bsi-logo">
+                        <img src="images/about/BSI Logo_white.png" alt="BSI logo in white" />
+                    </figure>
+                    <figure class="footer-logo cyber-logo">
+                        <img src="images/about/Certified.png" alt="cyber essentials logo in color" />
+                    </figure>
                 </div>
             </div>
         </footer>

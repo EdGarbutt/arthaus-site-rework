@@ -1,7 +1,10 @@
+@use '../abstracts' as abstract;
+@use '../mixins' as mixin;
+
 .about {
     /* SUB NAV */
     nav.sub-nav {
-        background-color: #dddddd;
+        background-color: #ffffff;
         height: 0.8*60px;
         z-index: 150;
         text-align: center;
@@ -21,7 +24,7 @@
             }
         }
         .opt {
-            font-size: 0.8*16px;
+            font-size: 0.8*20px;
             font-weight: bold;
             display: inline-block;
             height: 0.8*40px;
@@ -73,14 +76,13 @@
         @media only screen and (max-width: 1239px) {
             max-width: 700px;
         }
-
         // @media only screen and (max-width: 759px) {
         //     max-width: 300px;
         // }
         @media only screen and (max-width: 759px) {
             max-width: 300px;
             display: flex;
-                justify-content: space-evenly;
+            justify-content: space-evenly;
                
             .opt{
                 width:50px;
@@ -122,9 +124,9 @@
         margin-top: -190*0.8px;
     }
 
-    .mainWrapper .blocksWrapper .blockCol .block .icon {
+    /* .mainWrapper .blocksWrapper .blockCol .block .icon {
         width: auto !important;
-    }
+    } */
 
     .grey {
         background-color: #dddddd;
@@ -182,11 +184,11 @@
         min-height: 0.8*40px;
         text-align: center;
 
-        h2 {
+        /*h2 {
             color: white;
             font-weight: bold;
             padding: 0 0 0.8*15px 0;
-        }
+        }*/
 
         .testimonial {
             font-size: 0.8*21px;
@@ -226,7 +228,6 @@
                 img {
                     width: 100%;
                     transition: .5s;
-                    width: 0.8*338px;
                 }
 
                 div.textBox {
@@ -308,9 +309,9 @@
         }
 
         p {
-            font-size: 0.8*16px;
+           /* font-size: 0.8*16px;
             padding: 0 0 0.8*25px 0;
-            max-width: 0.8*650px;
+            max-width: 0.8*650px; */
             text-align: center;
             margin: 0 auto;
         }
@@ -324,6 +325,7 @@
             @media only screen and (max-width: 759px) {
                 margin:10px auto 28px auto;
             }
+
             .top {
                 font-size: 0.8*16px;
                 text-transform: uppercase;
@@ -472,4 +474,189 @@
             display: none !important;
         }
     }
+
+    .form-group--sendMsg-btn {
+        @media only screen and (min-width: 992px) {
+            // padding-left: 0;
+        }
+    }
+
+    .BSI-logo {
+        max-width: 200px;
+        padding-left: 20px;
+        margin-bottom: 18px;
+    
+        @media only screen and (max-width:759px) {
+            max-width:175px;
+            padding-left:0;
+            margin-left: auto;
+            margin-right:auto;
+        }
+        }
+    
+        .spec-icon {
+            max-width: 57px;
+            max-height: 57px;
+            padding-bottom: 8px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .spec-wrap {
+            width: 148px;
+            margin-bottom: 10px;
+        }
+    
+        .spec-list {
+            justify-content: center !important;
+            padding-left: 15px;
+            align-items: center;
+    
+            @media only screen and (max-width:759px) {
+                justify-content: center;
+                margin-top: 20px
+            }
+        }
+    
+    #counter {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+        .counter-wrap{
+            width:200px;
+            @media only screen and (max-width:1238px){
+                width:300px;
+            }
+        }
+        .counter-item {
+            padding-top: 10px;
+            margin-bottom: 30px;
+            border-right: 2px solid #fce7ca;
+        }
+    
+    
+        .counter-wrap:nth-child(4) .counter-item {
+            border-right: none;
+        }
+    
+        @media only screen and (max-width:1238px) {
+            .counter-wrap:nth-child(2) .counter-item {
+                border-right: none;
+            }
+        }
+    
+        @media only screen and (max-width:767px) {
+            .counter-item {
+                border-right: none;
+            }
+        }
+    
+    
+        .count-value {
+            font-size: 50px;
+        }
+    
+        .staff-card {
+            display: inline-block;
+        }
+    
+        .staff-list .staff-card:last-child {
+            padding-bottom: 0;
+        }
+    
+        .staff-list {
+            @media only screen and (max-width:758px) {
+                justify-content: center !important;
+            }
+        }
+    
+        .staff-card:nth-child(6n+1) .staff-role {
+            border-bottom: 2px solid mixin.m-get-key(abstract.$s-colours, burgundy);
+        }
+    
+        .staff-card:nth-child(6n+2) .staff-role {
+            border-bottom: 2px solid mixin.m-get-key(abstract.$s-colours, green);
+        }
+    
+        .staff-card:nth-child(6n+3) .staff-role {
+            border-bottom: 2px solid mixin.m-get-key(abstract.$s-colours, dark-blue);
+        }
+    
+        .staff-card:nth-child(6n+4) .staff-role {
+            border-bottom: 2px solid mixin.m-get-key(abstract.$s-colours, orange);
+        }
+    
+        .staff-card:nth-child(6n+5) .staff-role {
+            border-bottom: 2px solid mixin.m-get-key(abstract.$s-colours, teal);
+        }
+    
+        .staff-card:nth-child(6n) .staff-role {
+            border-bottom: 2px solid mixin.m-get-key(abstract.$s-colours, navy);
+        }
+    
+        .staff-role {
+            border-bottom: 2px solid red;
+            font-size:14px;
+        }
+    
+        .staff-img {
+            max-width: 224px;
+        }
+    
+        .staff-name {
+            font-size: 21px;
+        }
+    
+        .staff-card:nth-child(6n+1) .staff-name {
+            color: mixin.m-get-key(abstract.$s-colours, burgundy);
+        }
+    
+        .staff-card:nth-child(6n+2) .staff-name {
+            color: mixin.m-get-key(abstract.$s-colours, green);
+        }
+    
+        .staff-card:nth-child(6n+3) .staff-name {
+            color: mixin.m-get-key(abstract.$s-colours, dark-blue);
+        }
+    
+        .staff-card:nth-child(6n+4) .staff-name {
+            color: mixin.m-get-key(abstract.$s-colours, orange);
+        }
+    
+        .staff-card:nth-child(6n+5) .staff-name {
+            color: mixin.m-get-key(abstract.$s-colours, teal);
+        }
+    
+        .staff-card:nth-child(6n) .staff-name {
+            color: mixin.m-get-key(abstract.$s-colours, navy);
+        }
+    
+        .testimonial-logo {
+            height: 60px;
+            width: 60px;
+            margin: 18px auto;
+            border-radius: 50%;
+            padding: 0;
+            border: 1px solid silver;
+            background-size: cover;
+        }
+    
+        .testimonial-text {
+            min-height: 176px;
+    
+            @media only screen and (min-width:760px) {
+                min-height: 223px;
+            }
+        }
+    
+        .testimonial-card {
+            max-width: 300px;
+            list-style: none;
+        }
+    
+
 }

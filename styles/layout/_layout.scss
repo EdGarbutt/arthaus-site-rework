@@ -10,7 +10,8 @@
     .work,
     .about,
     .expertise,
-    .contact {
+    .contact,
+    .terms-conditions {
         
         .container {
             width: mixin.m-get-key($layout, main);
@@ -25,7 +26,8 @@
             .blocksWrapper {
 
                 .block {
-                    margin: $margin;
+                   // margin: $margin;
+                    margin: $margin $margin 0 $margin;
 
                     .content {
                         background-position: center;
