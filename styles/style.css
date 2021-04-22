@@ -10725,6 +10725,11 @@ footer {
       flex: 1 1 auto;
   }*/
 }
+@media (max-width: 759px) {
+  footer {
+    width: 300px;
+  }
+}
 @media (min-width: 760px) {
   footer {
     display: flex;
@@ -10913,6 +10918,10 @@ footer .footer-logo.cyber-logo {
 .home .block .content h2.caps {
   font-size: 10.4px;
   color: #ffffff;
+}
+
+footer {
+  margin: 8px 0 10px 0;
 }
 
 @media (max-width: 759px) {

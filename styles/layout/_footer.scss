@@ -12,6 +12,9 @@ footer {
     margin: 0px 0px 10px 0px;
     justify-content: space-between;
 
+    @include mixin.m-respond-to(small-max, abstract.$s-breakpoints) {
+        width: 300px;
+    }
 
     @include mixin.m-respond-to(medium, abstract.$s-breakpoints) {
         display: flex;
